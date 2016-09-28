@@ -15,8 +15,8 @@ Route::get('/', 'HomeController@index');
 
 Route::auth();
 
-//Route::get('/home', 'HomeController@index');
 
+Route::get('local/{lang}','HomeController@local');
 
 /*
 |--------------------------------------------------------------------------

@@ -7,9 +7,18 @@ use App\Models\Partner;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Session;
+use App;
+
 
 class OurCompanyController extends Controller
 {
+    public function __construct () {
+        $lang = Session::get ('locale');
+        if ($lang != null)
+            App::setlocale($lang);
+    }
+
     public function OurCompanies (){
 
         $partners=Partner::all();

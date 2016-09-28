@@ -5,11 +5,18 @@ namespace App\Http\Controllers;
 use App\Models\Company;
 use App\Models\Partner;
 use Illuminate\Http\Request;
+use Session;
+use App;
 
 use App\Http\Requests;
 
 class FrontController extends Controller
 {
+    public function __construct () {
+        $lang = Session::get ('locale');
+        if ($lang != null)
+            App::setlocale($lang);
+    }
 
 //    Front Website Controller
     public function AboutUs (){

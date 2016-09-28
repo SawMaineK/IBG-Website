@@ -8,9 +8,18 @@ use App\Models\Partner;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Session;
+use App;
+
 
 class OurNewsController extends Controller
 {
+    public function __construct () {
+        $lang = Session::get ('locale');
+        if ($lang != null)
+            App::setlocale($lang);
+    }
+
     public function OurNews (){
         $partners=Partner::all();
         $response['partners']=$partners;

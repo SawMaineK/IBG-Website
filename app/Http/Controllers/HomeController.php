@@ -9,6 +9,9 @@ use App\Models\Homeslider;
 use App\Models\News;
 use App\Models\Partner;
 use App\Models\Products;
+use Illuminate\Support\Facades\App;
+use Session;
+
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -18,6 +21,11 @@ class HomeController extends Controller
      *
      * @return void
      **/
+    public function local($lang){
+        Session::put('locale',$lang);
+        return back();
+    }
+
     public function __construct()
     {
 //        $this->middleware('auth');
@@ -32,6 +40,10 @@ class HomeController extends Controller
 
     public function index()
     {
+        $lang = Session::get ('locale');
+        if ($lang != null)
+            App::setLocale($lang);
+
         $homeslider = Homeslider::all();
         $response['homeslider']=$homeslider;
         $partners=Partner::all();

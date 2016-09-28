@@ -8,9 +8,18 @@ use App\Models\Products;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Session;
+use App;
+
 
 class WomenProductsController extends Controller
 {
+    public function __construct () {
+        $lang = Session::get ('locale');
+        if ($lang != null)
+            App::setlocale($lang);
+    }
+
     public function productsForWomen(){
         $partners=Partner::all();
         $response['partners']=$partners;

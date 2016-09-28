@@ -179,12 +179,12 @@
                                     </a>
                                     <ul>
                                         <li class="icl-it">
-                                            <a href="#">
+                                            <a href="{{asset('local/mm')}}">
 
                                                 <img class="iclflag" src="{{asset('plugins/sitepress-multilingual-cms/res/flags/mm.png')}}" alt="it" title="Myanmar" />&nbsp; Myanmar</a>
                                         </li>
                                         <li class="icl-es">
-                                            <a href="#">
+                                            <a href="{{asset('local/en')}}">
 
                                                 <img class="iclflag" src="{{asset('plugins/sitepress-multilingual-cms/res/flags/en.png')}}" alt="en" title="English" />&nbsp; English</a>
                                         </li>
@@ -457,7 +457,7 @@
                 <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
                     <div class="wpb_wrapper">
                         <div class="wpb_content_element dynamic_page_header style_1">
-                            <h1 style="font-size:36px; font-family:Bebas Neue; color:#009dd4">CHAIRWOMAN'S MESSAGE </h1>
+                            <h1 style="font-size:36px; font-family:Bebas Neue; color:#009dd4">@lang('home.CHAIRWOMAN')</h1>
                             <div class="line_under">
                                 <div class="line_left"></div>
                                 <div class="line_center"></div>

@@ -57,7 +57,9 @@
     <link rel='stylesheet' id='js_composer_front-css' href='{{asset('plugins/js_composer/assets/css/js_composer.css')}}' type='text/css' media='all' />
 
     <!--[if IE 8]><link rel="stylesheet" type="text/css" href="{{asset('plugins/js_composer/assets/css/vc-ie8.css')}}" media="screen"><![endif]-->
+
     @yield('header_styles')
+
 </head>
 
 <!-- End of Header -->
@@ -209,7 +211,7 @@
 
 <!-- Header BEGIN -->
 
-<div class="header_wrapper header_1 no-transparent">
+<div class="header_wrapper header_1 no-transparent  ">
     <header id="header" class=" ">
 
 
@@ -259,13 +261,11 @@
 
                                 <li @if(Request::is('/'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="/">Home</a>
                                 </li>
-
-                                <li @if(Request::is('our-companies'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-companies')}}">Our Companies</a>
-
-
+                                <?php $i = 0 ?>
+                                <li @if(Request::is('our-companies') || Request::is('company-detail/'+$i)) class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-companies')}}">Our Companies</a>
                                     <ul class="sub-menu non_mega_menu">
                                         @foreach($response['our_company'] as $company)
-                                            <li @if(Request::is('company-detail', $company->id))class="current-menu-item current-page-item"@endif>
+                                            <li>
                                                 <a href="{{ route('company-detail', $company->id) }}">{{$company->name}}</a>
                                             </li>
                                         @endforeach
@@ -660,7 +660,14 @@
 
 <script type='text/javascript' src='{{asset('js/jquery/ui/jquery.ui.widget.min.js')}}'></script>
 <script type='text/javascript' src='{{asset('js/jquery/ui/jquery.ui.accordion.min.js')}}'></script>
+
+<script type="text/javascript">
+
+</script>
+
 @yield('footer_scripts')
+
+
 
 </body>
 
