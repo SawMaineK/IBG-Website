@@ -1005,7 +1005,8 @@ th:active {
   font-weight: 300;
   border-radius: 0px;
   margin: 0 5px;
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 70%; /*new*/}
   .label.label-success {
     background-color: #60c560; }
 

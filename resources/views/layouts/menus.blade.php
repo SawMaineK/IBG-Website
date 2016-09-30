@@ -15,16 +15,16 @@
 </li>
 
 <li>
-	<a href="{{ asset('administration/companyImages') }}">
-		<div class="notifications label label-warning">{!! App\Models\CompanyImage::count() !!}</div>
-		<p>@lang('companyImages/index.model_name')</p>
+	<a href="{{ asset('administration/companies') }}">
+		<div class="notifications label label-warning">{!! App\Models\Company::count() !!}</div>
+		<p>@lang('companies/index.model_name')</p>
 	</a>
 </li>
 
 <li>
-	<a href="{{ asset('administration/companies') }}">
-		<div class="notifications label label-warning">{!! App\Models\Company::count() !!}</div>
-		<p>@lang('companies/index.model_name')</p>
+	<a href="{{ asset('administration/companyImages') }}">
+		<div class="notifications label label-warning">{!! App\Models\CompanyImage::count() !!}</div>
+		<p>@lang('companyImages/index.model_name')</p>
 	</a>
 </li>
 

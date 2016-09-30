@@ -2,7 +2,7 @@
 
 @section('title')
     @parent
-    News
+    Our Tour Packages
     @stop
 
     {{-- page level styles --}}
@@ -114,7 +114,7 @@
                                     <h1><a href="{{route('news-detail', $response['newdetail']->id)}}">{{$response['newdetail']->name}}</a></h1>
 
                                     <div class="blog-content">
-                                        <p>{{$response['newdetail']->body}}</p>
+                                        <p>{!!$response['newdetail']->body!!}</p>
                                     </div>
 
 

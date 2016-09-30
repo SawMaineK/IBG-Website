@@ -49,21 +49,13 @@
                     </span>
                 @endif
             </div>
-            <a class="pull-right" href="{{ url('/password/reset') }}">Forgot password?</a>
-            <div class="text-left">
-                <label class="checkbox">
-                    <input type="checkbox" name="remember"><span>Keep me logged in</span></label>
-            </div>
+
             <input class="btn btn-lg btn-primary btn-block" type="submit" value="Log in">
             <!-- If you need social login, uncomment below code -->
             <!-- <div class="social-login clearfix">
                 <a class="btn btn-primary pull-left facebook" href="index.html"><i class="fa fa-facebook"></i>Login with facebook</a><a class="btn btn-primary pull-right twitter" href="index.html"><i class="fa fa-twitter"></i>Login with twitter</a>
             </div> -->
         </form>
-        <p>
-            Don't have an account yet?
-        </p>
-        <a class="btn btn-default-outline btn-block" href="{{ url('/register') }}">Sign up now</a>
     </div>
     <!-- End Login Screen -->
 </body>

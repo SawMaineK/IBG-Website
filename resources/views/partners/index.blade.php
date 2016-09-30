@@ -20,10 +20,11 @@
                     </div>
                 @endif
             </div>
+
             <div style="padding-left: 7px;">
                 @include('common.paginate', ['records' => $partners])
-
             </div>
+
         </div>
 
     </div>

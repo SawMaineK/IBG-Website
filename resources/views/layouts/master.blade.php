@@ -60,6 +60,8 @@
 
     @yield('header_styles')
 
+   <style>
+   </style>
 </head>
 
 <!-- End of Header -->
@@ -85,49 +87,7 @@
                     <div id="widget_topnav-2" class="widget widget_topnav">
                         <div class="login small_widget">
                             <div class="widget_activation">
-                                <a href="#" data-box="login">Welcome @if(Auth::check()){{ Auth::user()->name }}@else Guest @endif. Login</a>
-                            </div>
-                            <div class="top_nav_sub login">
-                                <div class="sub-loggin">
-                                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-                                        {{ csrf_field() }}
-                                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                            <div class="col-md-6">
-                                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email">
-
-                                                @if ($errors->has('email'))
-                                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                                @endif
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                            <div class="col-md-6">
-                                                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-
-                                                @if ($errors->has('password'))
-                                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                                @endif
-                                            </div>
-                                        </div>
-
-                                        <input type="submit" class="button" value="Send" />
-
-                                        <div class="check-login">
-                                            <label for="rememberme">
-                                                <input name="remember" id="remember" type="checkbox" checked="checked" >
-                                                Remember me
-                                            </label>
-                                        </div>
-                                        <input type="hidden" name="redirect_to" value="/solveto/" />
-
-                                    </form>
-                                    <a href="#">Recover password</a>
-                                </div>
+                                <a href="#" data-box="login">Welcome @if(Auth::check()){{ Auth::user()->name }}@else Guest @endif</a>
                             </div>
                         </div>
                     </div>
@@ -159,12 +119,21 @@
                     <div id="widget_topnav-3" class="widget widget_topnav">
                         <div style="width: 100px; margin-top: 18px; font-size: 13px">
                             <div>
-                                <a href="{{ url('/logout') }}" class="logoutcolor">Logout |</a>
+                                @if(Auth::check())
+                                    <a href="{{url('/logout')}}" class="logoutcolor" style="margin-left: 30px;">Logout</a>
+                                @else
+                                    <a href="{{route('signin')}}" class="logincolor">Login |</a>
+                                @endif
+
                             </div>
                         </div>
                         <div style="margin-top: -20px; margin-left: 54px; font-size: 13px">
                             <div>
-                                <a href="{{ url('/register') }}" class="regcolor">Register</a>
+                                @if(Auth::check())
+
+                                @else
+                                    <a href="{{  route('registers') }}" class="regcolor">Register</a>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -261,8 +230,9 @@
 
                                 <li @if(Request::is('/'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="/">Home</a>
                                 </li>
-                                <?php $i = 0 ?>
-                                <li @if(Request::is('our-companies') || Request::is('company-detail/'+$i)) class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-companies')}}">Our Companies</a>
+
+
+                                <li @if(Request::is('our-companies')) class="hasSubMenu current-menu-ancestor current_page_ancestor" @endif><a href="{{route('our-companies')}}">Our Companies</a>
                                     <ul class="sub-menu non_mega_menu">
                                         @foreach($response['our_company'] as $company)
                                             <li>
@@ -272,19 +242,20 @@
                                     </ul>
                                 </li>
 
+
                                 <li @if(Request::is('our-products') || Request::is('men-products') || Request::is('women-products'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-products')}}">Our Products</a>
                                     <ul class="sub-menu non_mega_menu">
                                         <li @if(Request::is('men-products'))class="current-menu-item current-page-item"@endif>
-                                            <a href="{{route('men-products')}}">Men</a>
+                                            <a href="{{route('men-products')}}">For Men</a>
                                         </li>
                                         <li @if(Request::is('women-products'))class="current-menu-item current-page-item"@endif>
-                                            <a href="{{route('women-products')}}">Women</a>
+                                            <a href="{{route('women-products')}}">For Women</a>
                                         </li>
                                     </ul>
                                 </li>
 
-                                <li @if(Request::is('about-us')|| Request::is('our-company') || Request::is('vision-&-mission'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('about-us')}}">About Us</a>
 
+                                <li @if(Request::is('about-us')|| Request::is('our-company') || Request::is('vision-&-mission'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('about-us')}}">About Us</a>
                                     <ul class="sub-menu non_mega_menu">
                                         <li @if(Request::is('our-company'))class="current-menu-item current-page-item"@endif><a href="{{route('our-company')}}">Our Company</a>
                                         </li>
@@ -293,7 +264,7 @@
                                     </ul>
                                 </li>
 
-                                <li @if(Request::is('our-news'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-news')}}">News</a>
+                                <li @if(Request::is('our-package'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-news')}}">Our Tour Packages</a>
                                 </li>
 
                                 <li @if(Request::is('contact'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('contact')}}">Contact</a></li>
@@ -442,10 +413,10 @@
                     <div class="top_footer">
                         <div class="container">
                             <ul class='tweet_list' id='tweet_footer'>
-                                <li class="tweet">
+                                <li class="tweet" hidden>
                                     <h5><img alt="twitter" src=""> <a href="" class="twitter-link"></a></h5>
                                 </li>
-                                <li class="tweet">
+                                <li class="tweet" hidden>
                                     <h5><img alt="twitter" src="">  <a href="" class="twitter-link"></a></h5>
                                 </li>
                             </ul>
@@ -662,7 +633,12 @@
 <script type='text/javascript' src='{{asset('js/jquery/ui/jquery.ui.accordion.min.js')}}'></script>
 
 <script type="text/javascript">
-
+    $(document).ready(function(){
+        $('ul li ul li a').click(function(){
+            $('li a').removeClass("active");
+            $(this).addClass("active");
+        });
+    });
 </script>
 
 @yield('footer_scripts')

@@ -32,7 +32,7 @@
                             <div class="wpb_content_element">
                                 <div class="row-fluid row-google-map " style="position:relative; height:450px;">
                                     <div class="overlay" onClick=" style.pointerEvents= &apos; none &apos; "></div>
-                                    <iframe class="googlemap " style="height:450px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3154.055389998706!2d-122.16522420000003!3d37.7652993999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f8f50366a04d5%3A0x797bb69851540a55!2sNey+Ave%2C+Oakland%2C+CA+94605!5e0!3m2!1ssq!2s!4v1414082013945"></iframe>
+                                    <iframe class="googlemap " style="height:450px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.878906908145!2d96.10332524244055!3d16.881883732411715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c195b18c30ef2f%3A0x4582697d49d24939!2sThiri+St%2C+Yangon!5e0!3m2!1sen!2smm!4v1475142756014"></iframe>
                                     <div class="desc"></div>
                                 </div>
                             </div>

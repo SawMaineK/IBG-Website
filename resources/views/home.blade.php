@@ -86,49 +86,7 @@
                     <div id="widget_topnav-2" class="widget widget_topnav">
                         <div class="login small_widget">
                             <div class="widget_activation">
-                                <a href="#" data-box="login">Welcome @if(Auth::check()){{ Auth::user()->name }}@else Guest @endif. Login</a>
-                            </div>
-                            <div class="top_nav_sub login">
-                                <div class="sub-loggin">
-                                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/login') }}">
-                                        {{ csrf_field() }}
-                                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                                            <div class="col-md-6">
-                                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email">
-
-                                                @if ($errors->has('email'))
-                                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                                @endif
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                                            <div class="col-md-6">
-                                                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-
-                                                @if ($errors->has('password'))
-                                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                                @endif
-                                            </div>
-                                        </div>
-
-                                        <input type="submit" class="button" value="Send" />
-
-                                        <div class="check-login">
-                                            <label for="rememberme">
-                                                <input name="remember" id="remember" type="checkbox" checked="checked" >
-                                                Remember me
-                                            </label>
-                                        </div>
-                                        <input type="hidden" name="redirect_to" value="/solveto/" />
-
-                                    </form>
-                                    <a href="#">Recover password</a>
-                                </div>
+                                <a data-box="login">Welcome @if(Auth::check()){{ Auth::user()->name }}@else Guest @endif</a>
                             </div>
                         </div>
                     </div>
@@ -160,12 +118,20 @@
                     <div id="widget_topnav-3" class="widget widget_topnav">
                         <div style="width: 100px; margin-top: 18px; font-size: 13px">
                             <div>
-                                <a href="{{ url('/logout') }}" class="logoutcolor">Logout |</a>
+                                @if(Auth::check())
+                                <a href="{{url('/logout')}}" class="logoutcolor" style="margin-left: 30px;">Logout</a>
+                                @else
+                                    <a href="{{route('signin')}}" class="logincolor">Login |</a>
+                                @endif
                             </div>
                         </div>
                         <div style="margin-top: -20px; margin-left: 54px; font-size: 13px">
                             <div>
-                                <a href="{{ url('/register') }}" class="regcolor">Register</a>
+                                @if(Auth::check())
+
+                                @else
+                                <a href="{{ route('registers') }}" class="regcolor">Register</a>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -260,25 +226,25 @@
                                 <li @if(Request::is('/'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="/">Home</a>
                                 </li>
 
-                                <li @if(Request::is('our-companies'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-companies')}}">Our Companies</a>
 
-
+                                <li @if(Request::is('our-companies')) class="" @endif><a href="{{route('our-companies')}}">Our Companies</a>
                                     <ul class="sub-menu non_mega_menu">
                                         @foreach($response['company'] as $company)
-                                            <li @if(Request::is('company-detail', $company->id))class="current-menu-item current-page-item"@endif>
+                                            <li>
                                                 <a href="{{ route('company-detail', $company->id) }}">{{$company->name}}</a>
                                             </li>
                                         @endforeach
                                     </ul>
                                 </li>
 
+
                                 <li @if(Request::is('our-products') || Request::is('men-products') || Request::is('women-products'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-products')}}">Our Products</a>
                                     <ul class="sub-menu non_mega_menu">
                                         <li @if(Request::is('men-products'))class="current-menu-item current-page-item"@endif>
-                                            <a href="{{route('men-products')}}">Men</a>
+                                            <a href="{{route('men-products')}}">For Men</a>
                                         </li>
                                         <li @if(Request::is('women-products'))class="current-menu-item current-page-item"@endif>
-                                            <a href="{{route('women-products')}}">Women</a>
+                                            <a href="{{route('women-products')}}">For Women</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -293,7 +259,7 @@
                                     </ul>
                                 </li>
 
-                                <li @if(Request::is('our-news'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-news')}}">News</a>
+                                <li @if(Request::is('our-package'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-news')}}">Our Tour Packages</a>
                                 </li>
 
                                 <li @if(Request::is('contact'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('contact')}}">Contact</a></li>
@@ -473,7 +439,7 @@
             </div>
         </div>
 
-        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 60px !important; padding-bottom: 60px !important;">
+        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 40px !important; padding-bottom: 40px !important;">
             <div class="container  dark">
                 <div class="section_clear">
                     <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
@@ -537,7 +503,7 @@
         </div>
 
 
-        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 50px !important; padding-bottom: 45px !important;">
+        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 40px !important; padding-bottom: 40px !important;">
             <div class="container  dark">
                 <div class="section_clear">
                     <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
@@ -668,6 +634,19 @@
             </div>
         </div>
 
+
+        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 40px !important; padding-bottom: 40px !important;">
+            <div class="container  dark">
+                <div class="section_clear">
+                    <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
+                        <div class="wpb_wrapper">
+                            <div class="divider__ solid_border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         {{--our product--}}
         <div id="fws_5481c5b9bfae0" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 0px !important; padding-bottom: 0px !important;">
             <div class="container  dark">
@@ -780,10 +759,10 @@
                     <div class="top_footer">
                         <div class="container">
                             <ul class='tweet_list' id='tweet_footer'>
-                                <li class="tweet">
+                                <li class="tweet" hidden>
                                     <h5><img alt="twitter" src=""> <a href="" class="twitter-link"></a></h5>
                                 </li>
-                                <li class="tweet">
+                                <li class="tweet" hidden>
                                     <h5><img alt="twitter" src="">  <a href="" class="twitter-link"></a></h5>
                                 </li>
                             </ul>
@@ -1001,7 +980,9 @@
 <script type='text/javascript' src='{{asset('js/jquery/ui/jquery.ui.widget.min.js')}}'></script>
 <script type='text/javascript' src='{{asset('js/jquery/ui/jquery.ui.accordion.min.js')}}'></script>
 
+<script type="text/javascript">
 
+</script>
 
 
 </body>

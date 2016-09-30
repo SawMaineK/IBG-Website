@@ -15,7 +15,7 @@
         </div>
         <div class="clearfix">
 
-		    {!! Form::model($news, ['route' => ['administration.news.update', $news->id], 'enctype'=>'multipart/form-data', 'method' => 'patch', 'class'=>'form-horizontal', 'role'=>'form']) !!}
+		    {!! Form::model($news, ['route' => ['administration.news.update', $news->id], 'enctype'=>'multipart/form-data', 'method' => 'patch', 'class'=>'form-horizontal', 'role'=>'form', 'id'=>'new_form']) !!}
 
 		        @include('news.fields')
 
@@ -24,4 +24,27 @@
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+    $(function(){
+        $("#summernote").summernote({
+            height:400,
+            fontNames: [
+                'Zawgyi-One', 'Sans', 'Helvetica'
+            ],
+            fontNamesIgnoreCheck: [
+                'Zawgyi-One', 'Sans', 'Helvetica'
+            ],
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'italic', 'underline', 'clear']],
+                ['fontname', ['fontname']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'hr']]
+            ]
+        });
+    });
+</script>
 @endsection

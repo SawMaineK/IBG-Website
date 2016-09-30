@@ -11,7 +11,7 @@
             <i class="fa fa-th-list"></i>@lang('news/create.new_model')
         </div>
         <div class="clearfix">
-		    {!! Form::open(['route' => 'administration.news.store', 'enctype'=>'multipart/form-data', 'class'=>'form-horizontal', 'role'=>'form']) !!}
+		    {!! Form::open(['route' => 'administration.news.store', 'enctype'=>'multipart/form-data', 'class'=>'form-horizontal', 'role'=>'form', 'id'=>'new_form']) !!}
 
 		        @include('news.fields')
 

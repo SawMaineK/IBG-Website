@@ -49,7 +49,7 @@ html[xmlns] .slides {display: block;}
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 50px; height: 30px; margin: -24px 14px 0; background: #fff; display: block;  position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav a {width: 50px; height: 30px; margin: -20px 14px 0; background: #fff; display: block;  position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;} /*margin: -24px 14px 0*/
 .flex-direction-nav .flex-next {right: -36px; background-image:url('../img/arrow-right.png'); background-position:52%; background-repeat:no-repeat;  border-radius: 3px; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px;}
 
 .flex-direction-nav .flex-prev {left: -36px; background-image:url('../img/arrow-left.png'); background-position:43%; background-repeat:no-repeat;  border-radius: 3px; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px;}

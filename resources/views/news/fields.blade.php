@@ -77,9 +77,9 @@
 <div class="row">
 	<div class="form-group{{ $errors->has('body') ? ' has-error' : '' }}">
 	    {!! Form::label('body', Lang::get('news/fields.body'),['class' => 'col-sm-4 col-lg-2 control-label']) !!}
-	    <div class="col-sm-6 col-lg-6"> 
-	        
-			{!! Form::textarea('body', null, ['class' => 'form-control']) !!}
+	    <div class="col-sm-8 col-lg-10">
+			<input type="hidden" name="body" value="{{@$news->body}}" id="body" />
+			{!! Form::textarea('body_field', @$news->body, ['class' => 'form-control', 'id'=>'summernote']) !!}
 	        @if ($errors->has('body'))
 	            <span class="help-block">
 	                <strong>{{ $errors->first('body') }}</strong>
@@ -100,3 +100,18 @@
 	    </div>
 	</div>
 </div>
+
+
+<script type="text/javascript">
+
+	$("#new_form").submit(function(e) {
+		var self = this;
+		e.preventDefault();
+		var bodies = $('#summernote').code();
+		$("#body").val(bodies); //populate text area
+		self.submit();
+		return false;
+	});
+
+
+</script>

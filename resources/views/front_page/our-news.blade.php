@@ -2,7 +2,7 @@
 
 @section('title')
     @parent
-    News
+    Our Tour Packages
     @stop
 
     {{-- page level styles --}}
@@ -27,7 +27,7 @@
                         font-size: 40px
                     }
                 </style>
-                <h1 class="title">News</h1>
+                <h1 class="title">Our Tour Packages</h1>
                 <div class="breadcrumbss">
 
                     <ul class="page_parents pull-right">
@@ -35,7 +35,7 @@
                         <li class="breadcrumbs_c"><a class="breadcrumbs_c" href="/">Home</a>
                         </li>
 
-                        <li class="breadcrumbs_c"><a class="breadcrumbs_c" href="{{route('our-news')}}">News</a>
+                        <li class="breadcrumbs_c"><a class="breadcrumbs_c" href="{{route('our-news')}}">Our Tour Packages</a>
                         </li>
 
                     </ul>

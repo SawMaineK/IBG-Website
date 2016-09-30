@@ -90,10 +90,10 @@
             <!-- <div class="social-login clearfix">
                 <a class="btn btn-primary pull-left facebook" href="#"><i class="fa fa-facebook"></i>Sign up with facebook</a><a class="btn btn-primary pull-right twitter" href="#"><i class="fa fa-twitter"></i>Sign up with twitter</a>
             </div> -->
-            <p>
-                Already have an account?
-            </p>
-            <a class="btn btn-default-outline btn-block" href="{{ url('/login') }}">Login now</a>
+            {{--<p>--}}
+                {{--Already have an account?--}}
+            {{--</p>--}}
+            {{--<a class="btn btn-default-outline btn-block" href="{{ url('/login') }}">Login now</a>--}}
         </form>
     </div>
     <!-- End Signup Screen -->

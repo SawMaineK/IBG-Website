@@ -41,7 +41,7 @@ Route::group(['prefix' => 'api', 'namespace' => 'API'], function ()
 Route::group(['prefix' => 'administration', 'middleware' => ['auth']], function ()
 {    
 	Route::get('/', function () {
-	    return view('layouts.dashboard');
+		return redirect()->route('administration.partners.index');
 	});
     require Config::get('generator.path_scaffold_routes');
 });
@@ -65,9 +65,13 @@ Route::group(['prefix' => 'administration', 'middleware' => ['auth']], function 
 	Route::get('/company-detail/{id}', ['as' => 'company-detail', 'uses' => 'OurCompanyController@companyDetail']);
 //news
 	Route::get('/news-detail/{id}', ['as' => 'news-detail', 'uses' => 'OurNewsController@newsDetail']);
-	Route::get('/our-news', ['as' => 'our-news', 'uses' => 'OurNewsController@OurNews']);
+	Route::get('/our-package', ['as' => 'our-news', 'uses' => 'OurNewsController@OurNews']);
 //product
 	Route::get('/products-detail/{id}', ['as' => 'products-detail', 'uses' => 'OurProductsController@productsDetail']);
 	Route::get('/our-products', ['as' => 'our-products', 'uses' => 'OurProductsController@OurProducts']);
 	Route::get('/men-products', ['as' => 'men-products', 'uses' => 'MenProductsController@productsForMen']);
 	Route::get('/women-products', ['as' => 'women-products', 'uses' => 'WomenProductsController@productsForWomen']);
+
+//frontLogin&Register
+	Route::get('/signin', ['as' => 'signin', 'uses' => 'SignInController@signIn']);
+	Route::get('/registers', ['as' => 'registers', 'uses' => 'SignInController@registers']);

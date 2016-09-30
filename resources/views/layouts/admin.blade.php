@@ -97,7 +97,8 @@
     <script src="{{ asset('admin/javascripts/dropzone.js') }}" type="text/javascript"></script>
     <script src="{{ asset('admin/javascripts/main.js') }}" type="text/javascript"></script>
     <script src="{{ asset('admin/javascripts/respond.js') }}" type="text/javascript"></script>
-    
+
+
 </head>
 <body class="page-header-fixed bg-2 sidebar-nav">
     <div class="modal-shiftfix">
@@ -215,21 +216,27 @@
             <div class="container-fluid main-nav clearfix">
               <div class="nav-collapse">
                 <ul class="nav">
+
                   <li>
-                    <a href="{{asset('administration')}}"><span aria-hidden="true" class="se7en-home"></span>Dashboard</a>
+                      <div>
+                          @include('layouts.menus')
+                      </div>
                   </li>
-                  <li class="dropdown"><a href="{{ asset('administration/generators/create') }}">
-                    <span aria-hidden="true" class="se7en-star"></span>New Model</a>
-                  </li>
-                  <li class="dropdown"><a data-toggle="dropdown" href="#">
-                    <span aria-hidden="true" class="se7en-forms"></span>Models<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                    @include('layouts.menus')
-                    </ul>
-                  </li>
-                  <li><a href="#">
-                    <span aria-hidden="true" class="se7en-feed"></span>Docs</a>
-                  </li>
+                  {{--<li>--}}
+                    {{--<a href="{{asset('administration')}}"><span aria-hidden="true" class="se7en-home"></span>Dashboard</a>--}}
+                  {{--</li>--}}
+                  {{--<li class="dropdown"><a href="{{ asset('administration/generators/create') }}">--}}
+                    {{--<span aria-hidden="true" class="se7en-star"></span>New Model</a>--}}
+                  {{--</li>--}}
+                  {{--<li class="dropdown"><a data-toggle="dropdown" href="#">--}}
+                    {{--<span aria-hidden="true" class="se7en-forms"></span>Models<b class="caret"></b></a>--}}
+                    {{--<ul class="dropdown-menu">--}}
+                    {{--@include('layouts.menus')--}}
+                    {{--</ul>--}}
+                  {{--</li>--}}
+                  {{--<li><a href="#">--}}
+                    {{--<span aria-hidden="true" class="se7en-feed"></span>Docs</a>--}}
+                  {{--</li>--}}
                 </ul>
               </div>
             </div>
