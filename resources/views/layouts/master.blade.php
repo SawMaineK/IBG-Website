@@ -231,7 +231,7 @@
                                 <li @if(Request::is('/'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="/">Home</a>
                                 </li>
 
-                                <li @if(Request::segment(1) == 'company-detail' ) class="hasSubMenu current-menu-ancestor current_page_ancestor" @endif>
+                                <li @if(Request::segment(1) == 'company-detail' || Request::is('our-companies') ) class="hasSubMenu current-menu-ancestor current_page_ancestor" @endif>
                                     <a href="{{route('our-companies')}}">Our Companies</a>
                                     <ul class="sub-menu non_mega_menu">
                                         @foreach($response['our_company'] as $company)
