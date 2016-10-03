@@ -81,11 +81,11 @@
                                 <div class="span6">
                                     <div class="content post_format_standart">
 
-                                        <h1><a href="post.html">{{$row->name}}</a></h1>
+                                        <h1><a href="{{route('news-detail', $row->id)}}">{{$row->name}}</a></h1>
 
                                         <ul class="info"></ul>
 
-                                        <div class="blog-content">{{Illuminate\Support\Str::words($row->body, 30,'...')}}</div>
+                                        <div class="blog-content">{!! Illuminate\Support\Str::words($row->body, 30,'...') !!}</div>
                                         <a class="pull-right readm" style="margin-top: 30px;"
                                            href="{{route('news-detail', $row->id)}}">Read More
                                             <img class="readm_img" src="{{asset('img/arrow-right.png')}}"></a>

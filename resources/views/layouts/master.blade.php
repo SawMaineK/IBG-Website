@@ -231,17 +231,16 @@
                                 <li @if(Request::is('/'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="/">Home</a>
                                 </li>
 
-
-                                <li @if(Request::is('our-companies')) class="hasSubMenu current-menu-ancestor current_page_ancestor" @endif><a href="{{route('our-companies')}}">Our Companies</a>
+                                <li @if(Request::segment(1) == 'company-detail' ) class="hasSubMenu current-menu-ancestor current_page_ancestor" @endif>
+                                    <a href="{{route('our-companies')}}">Our Companies</a>
                                     <ul class="sub-menu non_mega_menu">
                                         @foreach($response['our_company'] as $company)
-                                            <li>
+                                            <li @if(Request::segment(2)== $company->id)class="current-menu-item current-page-item"@endif>
                                                 <a href="{{ route('company-detail', $company->id) }}">{{$company->name}}</a>
                                             </li>
                                         @endforeach
                                     </ul>
                                 </li>
-
 
                                 <li @if(Request::is('our-products') || Request::is('men-products') || Request::is('women-products'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-products')}}">Our Products</a>
                                     <ul class="sub-menu non_mega_menu">
@@ -378,7 +377,7 @@
                                 @if(isset($response['partners']))
                                     @foreach($response['partners'] as $partners)
                                         <div class="item">
-                                            <a href="#" class="tooltip_text" title="Pinterest">
+                                            <a href="../{{$partners->link}}" class="tooltip_text" title="{{$partners->name}}">
                                                 <img src="../partners/x100/{{$partners->image}}" alt="{{$partners->name}}">
                                             </a>
                                         </div>

@@ -227,10 +227,11 @@
                                 </li>
 
 
-                                <li @if(Request::is('our-companies')) class="" @endif><a href="{{route('our-companies')}}">Our Companies</a>
+                                <li @if(Request::segment(1) == 'company-detail' ) class="hasSubMenu current-menu-ancestor current_page_ancestor" @endif>
+                                    <a href="{{route('our-companies')}}">Our Companies</a>
                                     <ul class="sub-menu non_mega_menu">
                                         @foreach($response['company'] as $company)
-                                            <li>
+                                            <li @if(Request::segment(2)== $company->id)class="current-menu-item current-page-item"@endif>
                                                 <a href="{{ route('company-detail', $company->id) }}">{{$company->name}}</a>
                                             </li>
                                         @endforeach
@@ -620,6 +621,12 @@
                                                 <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
                                                     <dd>
                                                         <h4>Ngwe Saung  </h4>
+                                                        <p></p>
+                                                    </dd>
+                                                </dl>
+                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
+                                                    <dd>
+                                                        <h4>Pyin Oo Lwin  </h4>
                                                         <p></p>
                                                     </dd>
                                                 </dl>
