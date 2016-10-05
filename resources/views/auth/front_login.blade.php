@@ -46,7 +46,7 @@
     <!-- Page Head -->
 
 @section('header_page')
-    <div class="header_page basic background_image" style="background-image:url({{asset('images/2014/09/Untitled-2-1024x293.jpg')}});background-repeat: no-repeat; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; color:#2f383d; ">
+    <div class="header_page basic background_image" style="background-image:url({{asset('img/default_header.jpg')}});background-repeat: no-repeat; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover; color:#2f383d; ">
         <div class="container">
 
             <style>

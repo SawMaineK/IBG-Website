@@ -54,6 +54,12 @@
                                     </div>
                                     <p class="description">We want to hear from you. Whether you have an enquiry, feedback or simply want to talk, there are a number of ways you can reach us.</p>
                                 </div>
+                                @if ($message = Session::get('message'))
+                                    <div class="alert alert-success alert-dismissable margin5">
+                                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                        {{ $message }}
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -68,14 +74,39 @@
                                     <div class="row-fluid">
                                         <div class="row-fluid">
                                             <div class="span12">
-                                                <form name="contactForm" class="standard-form row-fluid" action="#" method="post">
-                                                    <input class="span6" name="themeple_name" placeholder="Name" type="text" id="themeple_name" value="" />
-                                                    <input class="span6" name="themeple_e-mail" placeholder="E-Mail" type="text" id="themeple_e-mail" value="" />
-                                                    <input class="span6" name="themeple_subject" placeholder="Subject" type="text" id="themeple_subject" value="" />
-                                                    <textarea class="span12" placeholder="Message" name="themeple_message" cols="40" rows="7" id="themeple_message"></textarea>
-                                                    <p class="perspective">
-                                                        <input type="submit" value="Send" class="btn-system normal default" />
-                                                    </p>
+                                                <form name="contactForm" class="standard-form row-fluid" method="post" enctype="multipart/form-data">
+                                                    <?php echo csrf_field(); ?>
+                                                    <div class="col-lg-12">
+                                                        <input class="span6" name="name" placeholder="Name" type="text" id="name" value="{{ old('name') }}" required/>
+                                                        @if ($errors->has('name'))
+                                                            <span class="help-block error_message">
+                                                                <strong>{{ $errors->first('name') }}</strong>
+                                                            </span>
+                                                        @endif
+                                                        <input class="span6" name="email" placeholder="E-Mail" type="email" id="email" value="" required style="float: right;margin-right: 0%;text-transform: lowercase !important;"/>
+                                                        @if ($errors->has('email'))
+                                                            <span class="help-block error_message">
+                                                                <strong>{{ $errors->first('email') }}</strong>
+                                                            </span>
+                                                        @endif
+                                                    </div>
+
+                                                        <input class="span6" name="subject" placeholder="Subject" type="text" id="subject" value="" required/>
+                                                        @if ($errors->has('subject'))
+                                                            <span class="help-block error_message">
+                                                                    <strong>{{ $errors->first('subject') }}</strong>
+                                                                </span>
+                                                        @endif
+
+                                                        <textarea class="span12" placeholder="Message" name="message" cols="40" rows="7" id="message" required></textarea>
+                                                        @if ($errors->has('message'))
+                                                            <span class="help-block error_message">
+                                                                <strong>{{ $errors->first('message') }}</strong>
+                                                            </span>
+                                                        @endif
+                                                        <p class="perspective">
+                                                            <input type="submit" value="Send" class="btn-system normal default" />
+                                                        </p>
                                                 </form>
                                                 <div id="ajaxresponse"></div>
                                             </div>

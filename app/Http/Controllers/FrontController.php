@@ -5,8 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\Company;
 use App\Models\Partner;
 use Illuminate\Http\Request;
+use Validator;
 use Session;
 use App;
+use Mail;
+use Config;
 
 use App\Http\Requests;
 
@@ -50,5 +53,38 @@ class FrontController extends Controller
         $response['our_company'] = $companies;
         return view('front_page/contact', compact('response'));
     }
+
+    public function store(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'name'              => 'required',
+            'email'           => 'required|email',
+            'subject'              => 'required',
+            'message'          => 'required',
+        ]);
+        if ($validator->fails()) {
+            return redirect('contact')
+                ->withErrors($validator)
+                ->withInput();
+        }
+        $data = array(
+            'user_name'  => $request->name,
+            'user_email'  => $request->email,
+            'user_subject'  => $request->subject,
+            'user_message'  => $request->message,
+        );
+
+        $emails = 'sawmainek90@gmail.com';
+
+        Mail::send('emails.contact', $data, function ($m) use ($emails) {
+            $m->from(Config::get('mail.from.address'),Config::get('mail.from.name'));
+            $m->to($emails,'Intelligence Business Global Company Limited');
+            $m->subject('Intelligence Business Global Company Limited');
+        });
+
+        return redirect()->back()->with('message',"Successfully Send Mail!");
+
+    }
+
 
 }

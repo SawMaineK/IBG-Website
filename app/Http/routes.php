@@ -58,7 +58,7 @@ Route::group(['prefix' => 'administration', 'middleware' => ['auth']], function 
 	Route::get('/our-company', ['as' => 'our-company', 'uses' => 'FrontController@OurCompany']);
 	Route::get('/vision-&-mission', ['as' => 'vision-&-mission', 'uses' => 'FrontController@VisionMission']);
 	Route::get('/contact', ['as' => 'contact', 'uses' => 'FrontController@contact']);
-
+	Route::post('contact',  'FrontController@store');
 
 //company
 	Route::get('/our-companies', ['as' => 'our-companies', 'uses' => 'OurCompanyController@OurCompanies']);
