@@ -21,7 +21,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Pingback URL -->
     <link rel="pingback" href="http://newthemes.themeple.co/solveto/xmlrpc.php" />
-
+    <!-- Favicon
+   ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('images/2014/11/fav_icon.png')}}">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 
     <!--[if lt IE 9]>
@@ -79,10 +81,10 @@
             <div class="span6">
                 <div class="pull-left">
                     <div id="text-2" class="widget widget_text">
-                        <div class="textwidget">102580 Santa Monica BLVD</div>
+                        <div class="textwidget">Bldg No.92-A3, Thiri Street, (2) Quarter,</div>
                     </div>
                     <div id="text-3" class="widget widget_text">
-                        <div class="textwidget">Los Angeles +3 045 224 33 12</div>
+                        <div class="textwidget">Hlaing Tsp, Yangon, Union of Myanmar</div>
                     </div>
                     <div id="widget_topnav-2" class="widget widget_topnav">
                         <div class="login small_widget">
@@ -200,25 +202,6 @@
 
                     <div class="after_logo">
 
-
-                        <!-- Search -->
-
-
-                        <div class="header_search">
-                            <div class="right_search">
-                                <i class="moon-search-3"></i>
-                            </div>
-                            <div class="right_search_container">
-                                <form action="#" id="search-form">
-                                    <div class="input-append">
-                                        <input type="text" size="16" placeholder="Search&hellip;" name="s" id="s">
-                                        <button type="submit" class="more">Search</button>
-                                        <a href="#" class="close_"><i class="moon-close"></i></a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- End Search-->
                     </div>
 
 
@@ -290,7 +273,7 @@
         <div class="container">
             <div class="row-fluid">
                 <div class="span12">
-                    <h3 class="pull-left">102580 Santa Monica BLVD      Los Angeles +3 045 224 33 12</h3>
+                    <h3 class="pull-left">Bldg No.92-A3, Thiri Street, (2) Quarter, Hlaing Tsp, Yangon, Union of Myanmar</h3>
                     <ul class="pull-right socials">
 
                         <li><a href="#"><i class="moon-google_plus"></i></a>
@@ -337,6 +320,15 @@
                 </ul>
             </li>
 
+            <li class="hasSubMenu"><a href="{{route('our-products')}}">Our Products</a>
+                <ul class="sub-menu non_mega_menu">
+                    <li><a href="{{route('men-products')}}">For Men</a>
+                    </li>
+                    <li><a href="{{route('women-products')}}">For Women</a>
+                    </li>
+                </ul>
+            </li>
+
             <li class="hasSubMenu"><a href="{{route('about-us')}}">About Us</a>
 
                 <ul class="sub-menu non_mega_menu">
@@ -346,7 +338,8 @@
                     </li>
                 </ul>
             </li>
-            <li class="hasSubMenu"><a href="{{route('our-news')}}">News</a>
+
+            <li class="hasSubMenu"><a href="{{route('our-news')}}">Our Tour Packages</a>
             </li>
 
             <li class="hasSubMenu"><a href="{{route('contact')}}">Contact</a></li>
@@ -473,8 +466,6 @@
                     </div>
 
 
-
-
                     <div class="span3">
 
                         <div id="tag_cloud-2" class="widget widget_tag_cloud">
@@ -484,21 +475,19 @@
 
 
                                 <div id="mc_signup">
-                                    <form method="post" action="#mc_signup" id="mc_signup_form">
-                                        <input type="hidden" id="mc_submit_type" name="mc_submit_type" value="html" />
-                                        <input type="hidden" name="mcsf_action" value="mc_submit_signup_form" />
-                                        <input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="8300a15a60" />
+                                    <form id="mc_signup_form" method="post" enctype="multipart/form-data" action="{{route('newsletter')}}">
+                                        <?php echo csrf_field(); ?>
 
                                         <div class="mc_form_inside">
 
-                                            <div class="updated" id="mc_message">
-                                            </div>
-                                            <!-- /mc_message -->
-
-
                                             <div class="mc_merge_var">
-                                                <label for="mc_mv_EMAIL" class="mc_var_label mc_header mc_header_email">Email Address</label>
-                                                <input type="text" size="18" placeholder="" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="mc_input" />
+                                                <label for="email" class="mc_var_label mc_header mc_header_email">Email Address</label>
+                                                <input type="text" size="18" placeholder="Type your email address" name="email" id="email" class="mc_input" required/>
+                                                @if ($errors->has('email'))
+                                                    <span class="help-block error_message">
+                                                          <strong>{{ $errors->first('email') }}</strong>
+                                                    </span>
+                                                @endif
                                             </div>
                                             <!-- /mc_merge_var -->
                                             <div class="">
@@ -522,7 +511,6 @@
                             </div>
                         </div>
                     </div>
-
 
 
                     <div class="span3">

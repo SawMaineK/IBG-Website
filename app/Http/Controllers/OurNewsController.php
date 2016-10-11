@@ -30,6 +30,9 @@ class OurNewsController extends Controller
         $companies = Company::all();
         $response['our_company'] = $companies;
 
+        $paginatenews = News::orderby('id','asc')->paginate(7);
+        $response['paginatenews'] = $paginatenews;
+
         return view('front_page/our-news', compact('response'));
     }
 

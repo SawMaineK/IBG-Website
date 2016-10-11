@@ -139,11 +139,6 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    {{--<div class="pull-right">--}}
-                                        {{--<div class="nav-previous"><a href="">Next Page</a>--}}
-                                        {{--</div>--}}
-                                        {{--<div class="nav-next"></div>--}}
-                                    {{--</div>--}}
                                 </div>
                         </div>
                     </section>

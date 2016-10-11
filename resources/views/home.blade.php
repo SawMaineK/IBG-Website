@@ -18,7 +18,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Pingback URL -->
     <link rel="pingback" href="http://newthemes.themeple.co/solveto/xmlrpc.php" />
-
+    <!-- Favicon
+    ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{asset('images/2014/11/fav_icon.png')}}">
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 
     <!--[if lt IE 9]>
@@ -78,10 +80,11 @@
             <div class="span6">
                 <div class="pull-left">
                     <div id="text-2" class="widget widget_text">
-                        <div class="textwidget">102580 Santa Monica BLVD</div>
+                        <div class="textwidget">Bldg No.92-A3, Thiri Street, (2) Quarter,
+                            </div>
                     </div>
                     <div id="text-3" class="widget widget_text">
-                        <div class="textwidget">Los Angeles +3 045 224 33 12</div>
+                        <div class="textwidget">Hlaing Tsp, Yangon, Union of Myanmar</div>
                     </div>
                     <div id="widget_topnav-2" class="widget widget_topnav">
                         <div class="login small_widget">
@@ -193,26 +196,6 @@
                     <!-- #logo END -->
 
                     <div class="after_logo">
-
-
-                        <!-- Search -->
-
-
-                        <div class="header_search">
-                            <div class="right_search">
-                                <i class="moon-search-3"></i>
-                            </div>
-                            <div class="right_search_container">
-                                <form action="#" id="search-form">
-                                    <div class="input-append">
-                                        <input type="text" size="16" placeholder="Search&hellip;" name="s" id="s">
-                                        <button type="submit" class="more">Search</button>
-                                        <a href="#" class="close_"><i class="moon-close"></i></a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- End Search-->
                     </div>
 
 
@@ -308,6 +291,14 @@
                     @endforeach
                 </ul>
             </li>
+            <li class="hasSubMenu"><a href="{{route('our-products')}}">Our Products</a>
+                <ul class="sub-menu non_mega_menu">
+                    <li><a href="{{route('men-products')}}">For Men</a>
+                    </li>
+                    <li><a href="{{route('women-products')}}">For Women</a>
+                    </li>
+                </ul>
+            </li>
 
             <li class="hasSubMenu"><a href="{{route('about-us')}}">About Us</a>
 
@@ -318,7 +309,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="hasSubMenu"><a href="{{route('our-news')}}">News</a>
+            <li class="hasSubMenu"><a href="{{route('our-news')}}">Our Tour Packages</a>
             </li>
 
             <li class="hasSubMenu"><a href="{{route('contact')}}">Contact</a></li>
@@ -563,75 +554,34 @@
                             <div id="fws_5481cb0e18791" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el standard_section    " style="padding-top: 0px !important; padding-bottom: 0px !important; ">
                                 <div class="container  dark">
                                     <div class="section_clear">
-                                        <div class="vc_col-sm-6 wpb_column column_container" style="" data-animation="" data-delay="0">
-                                            <div class="wpb_wrapper">
-                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
-                                                    <dd>
-                                                        <h4>Yangon </h4>
-                                                        <p></p>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
-                                                    <dd>
-                                                        <h4>Mandalay </h4>
-                                                        <p></p>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
-                                                    <dd>
-                                                        <h4>Bagan </h4>
-                                                        <p></p>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
-                                                    <dd>
-                                                        <h4>Inle </h4>
-                                                        <p></p>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
-                                                    <dd>
-                                                        <h4>Kyaiktiyo Pagoda </h4>
-                                                        <p></p>
-                                                    </dd>
-                                                </dl>
-                                            </div>
+
+                                        <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
+                                            <?php $i=1; $count=count($response['news']); ?>
+                                                @if(count($response['news'])>0)
+                                                    @foreach($response['news'] as $row)
+                                                        @if($i==1 || $i%9==1)
+                                                            <div class="col-lg-12" style="float: left;margin-right: 76px;">
+                                                                @endif
+                                                                <dl class="dl-horizontal list">
+
+                                                                    <dt><div class="overlay"></div>
+                                                                        <div class="circle">
+                                                                            <i class="moon-checkmark"></i>
+                                                                        </div>
+                                                                    </dt>
+                                                                    <dd>
+                                                                        <h4>{{$row->name}}</h4>
+                                                                        <p></p>
+                                                                    </dd>
+                                                                </dl>
+                                                                @if($i==$count || $i%9==0)
+                                                            </div>
+                                                        @endif
+                                                        <?php $i++; ?>
+                                                    @endforeach
+                                                @endif
                                         </div>
 
-                                        <div class="vc_col-sm-6 wpb_column column_container" style="" data-animation="" data-delay="0">
-                                            <div class="wpb_wrapper">
-                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
-                                                    <dd>
-                                                        <h4>Chaungtha </h4>
-                                                        <p></p>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
-                                                    <dd>
-                                                        <h4>Kyaing Tong </h4>
-                                                        <p></p>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
-                                                    <dd>
-                                                        <h4>Ngapali </h4>
-                                                        <p></p>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
-                                                    <dd>
-                                                        <h4>Ngwe Saung  </h4>
-                                                        <p></p>
-                                                    </dd>
-                                                </dl>
-                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark"></i></div></dt>
-                                                    <dd>
-                                                        <h4>Pyin Oo Lwin  </h4>
-                                                        <p></p>
-                                                    </dd>
-                                                </dl>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -642,7 +592,7 @@
         </div>
 
 
-        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 40px !important; padding-bottom: 40px !important;">
+        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 20px !important; padding-bottom: 40px !important;">
             <div class="container  dark">
                 <div class="section_clear">
                     <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
@@ -836,21 +786,19 @@
 
 
                                 <div id="mc_signup">
-                                    <form method="post" action="#mc_signup" id="mc_signup_form">
-                                        <input type="hidden" id="mc_submit_type" name="mc_submit_type" value="html" />
-                                        <input type="hidden" name="mcsf_action" value="mc_submit_signup_form" />
-                                        <input type="hidden" id="_mc_submit_signup_form_nonce" name="_mc_submit_signup_form_nonce" value="8300a15a60" />
+                                    <form id="mc_signup_form" method="post" enctype="multipart/form-data" action="{{route('newsletter')}}">
+                                        <?php echo csrf_field(); ?>
 
                                         <div class="mc_form_inside">
 
-                                            <div class="updated" id="mc_message">
-                                            </div>
-                                            <!-- /mc_message -->
-
-
                                             <div class="mc_merge_var">
-                                                <label for="mc_mv_EMAIL" class="mc_var_label mc_header mc_header_email">Email Address</label>
-                                                <input type="text" size="18" placeholder="" name="mc_mv_EMAIL" id="mc_mv_EMAIL" class="mc_input" />
+                                                <label for="email" class="mc_var_label mc_header mc_header_email">Email Address</label>
+                                                <input type="text" size="18" placeholder="Type your email address" name="email" id="email" class="mc_input" required/>
+                                                @if ($errors->has('email'))
+                                                    <span class="help-block error_message">
+                                                          <strong>{{ $errors->first('email') }}</strong>
+                                                    </span>
+                                                @endif
                                             </div>
                                             <!-- /mc_merge_var -->
                                             <div class="">

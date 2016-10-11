@@ -55,7 +55,7 @@
 
                     <div class="span9">
 
-                        @foreach($response['news'] as $row)
+                        @foreach($response['paginatenews'] as $row)
                             <article id="post-1847" class="post-1847 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-portfolio tag-showcase row-fluid blog-article v2 normal">
 
                             <div class="span12">
@@ -99,9 +99,11 @@
 
                         <div class="p_pagination">
 
-                            <div class="pull-right">
-                                <div class="nav-previous"></div>
-                                <div class="nav-next"></div>
+                            <div class="pagi" style="float:right;">
+                                <ul>
+                                    <li>{!! $response['paginatenews']->render() !!}
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
@@ -133,7 +135,7 @@
                                     <dl>
 
                                         <dt>
-                                            <img width="61" height="61" src="news/{{$news->image}}" class="attachment-61x61 wp-post-image" alt="9232183203_fe2c32594b_h">                                      </dt>
+                                            <img width="61" height="61" src="news/{{$news->image}}" class="attachment-61x61 wp-post-image" alt="9232183203_fe2c32594b_h"></dt>
 
                                         <dd>
                                             <div class="title"><a href="{{route('news-detail', $news->id)}}">{{$news->name}}</a>
@@ -146,43 +148,22 @@
                                     </dl>
                                 @endforeach
 
-
                             </div>
 
-
-
-
-
-
-
-
-
-
                         </div>
+
 
                         <div id="meta-2" class="widget widget_meta">
                             <h5 class="widget-title">Meta</h5>
                             <ul>
-                                <li><a href="{{ url('/login') }}">Log in</a>
+                                <li><a href="{{ url('/signin') }}">Log in</a>
                                 </li>
-                                <li><a href="{{ url('/register') }}">Register</a>
+                                <li><a href="{{ url('/registers') }}">Register</a>
                                 </li>
                             </ul>
                         </div>
 
-
-
-
-
-
-
-
-
-
                     </aside>
-
-
-
 
 
                 </div>

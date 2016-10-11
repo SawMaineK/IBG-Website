@@ -75,3 +75,6 @@ Route::group(['prefix' => 'administration', 'middleware' => ['auth']], function 
 //frontLogin&Register
 	Route::get('/signin', ['as' => 'signin', 'uses' => 'SignInController@signIn']);
 	Route::get('/registers', ['as' => 'registers', 'uses' => 'SignInController@registers']);
+
+//NewsLetter
+	Route::post('/newsletter', ['as' => 'newsletter', 'uses' => 'NewsLetterController@newsletter']);

@@ -55,6 +55,7 @@ class HomeController extends Controller
         $products = Products::all();
         $response['products'] = $products;
 
+
         return view('home', compact('response'));
     }
 
