@@ -50,10 +50,13 @@ class HomeController extends Controller
         $response['partners']=$partners;
         $companies = Company::all();
         $response['company'] = $companies;
-        $news = News::all();
+        $news = News::wherelocation('local')->get();
         $response['news'] = $news;
         $products = Products::all();
         $response['products'] = $products;
+
+        $global = News::wherelocation(' Global')->get();
+        $response['global'] = $global;
 
 
         return view('home', compact('response'));

@@ -246,7 +246,11 @@
                                     </ul>
                                 </li>
 
-                                <li @if(Request::is('our-package'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-news')}}">Our Tour Packages</a>
+                                <li @if(Request::is('our-package') || Request::is('dubai-package'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-news')}}">Our Tour Packages</a>
+                                    <ul class="sub-menu non_mega_menu">
+                                        <li @if(Request::is('dubai-package'))class="current-menu-item current-page-item"@endif><a href="{{route('dubai-package')}}">Dubai</a>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <li @if(Request::is('contact'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('contact')}}">Contact</a></li>

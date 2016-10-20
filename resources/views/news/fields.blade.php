@@ -15,6 +15,23 @@
 
 </div>
 
+<!-- Name Mm Field -->
+<div class="row">
+	<div class="form-group{{ $errors->has('name_mm') ? ' has-error' : '' }}">
+	    {!! Form::label('name_mm', Lang::get('news/fields.name_mm'),['class' => 'col-sm-4 col-lg-2 control-label']) !!}
+	    <div class="col-sm-6 col-lg-6"> 
+	        
+			{!! Form::text('name_mm', null, ['class' => 'form-control']) !!}
+	        @if ($errors->has('name_mm'))
+	            <span class="help-block">
+	                <strong>{{ $errors->first('name_mm') }}</strong>
+	            </span>
+	        @endif
+	    </div>
+	</div>
+
+</div>
+
 <!-- Homeimage Field -->
 <div class="row">
 	<div class="form-group{{ $errors->has('homeimage') ? ' has-error' : '' }}">
@@ -76,13 +93,39 @@
 <!-- Body Field -->
 <div class="row">
 	<div class="form-group{{ $errors->has('body') ? ' has-error' : '' }}">
-	    {!! Form::label('body', Lang::get('news/fields.body'),['class' => 'col-sm-4 col-lg-2 control-label']) !!}
-	    <div class="col-sm-8 col-lg-10">
+		{!! Form::label('body', Lang::get('news/fields.body'),['class' => 'col-sm-4 col-lg-2 control-label']) !!}
+		<div class="col-sm-8 col-lg-10">
 			<input type="hidden" name="body" value="{{@$news->body}}" id="body" />
 			{!! Form::textarea('body_field', @$news->body, ['class' => 'form-control', 'id'=>'summernote']) !!}
-	        @if ($errors->has('body'))
-	            <span class="help-block">
+			@if ($errors->has('body'))
+				<span class="help-block">
 	                <strong>{{ $errors->first('body') }}</strong>
+	            </span>
+			@endif
+		</div>
+	</div>
+
+</div>
+
+<!-- Location Field -->
+<div class="row">
+	<div class="form-group{{ $errors->has('location') ? ' has-error' : '' }}">
+	    {!! Form::label('location', Lang::get('news/fields.location'),['class' => 'col-sm-4 col-lg-2 control-label']) !!}
+	    <div class="col-sm-6 col-lg-6"> 
+	        
+			<div class="radio-inline">
+						<label>
+									{!! Form::radio('location', 'Local', null) !!} <span>Local</span>
+						</label>
+			</div>
+			<div class="radio-inline">
+						<label>
+									{!! Form::radio('location', ' Global', null) !!} <span> Global</span>
+						</label>
+			</div>
+	        @if ($errors->has('location'))
+	            <span class="help-block">
+	                <strong>{{ $errors->first('location') }}</strong>
 	            </span>
 	        @endif
 	    </div>

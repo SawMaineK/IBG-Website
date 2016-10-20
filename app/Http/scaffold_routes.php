@@ -136,3 +136,10 @@ Route::get('productsImages/{id}/delete', [
     'as' => 'administration.productsImages.delete',
     'uses' => 'ProductsImageController@destroy',
 ]);
+
+Route::resource('news', 'NewsController');
+
+Route::get('news/{id}/delete', [
+    'as' => 'administration.news.delete',
+    'uses' => 'NewsController@destroy',
+]);

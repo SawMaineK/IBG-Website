@@ -243,7 +243,11 @@
                                     </ul>
                                 </li>
 
-                                <li @if(Request::is('our-package'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-news')}}">Our Tour Packages</a>
+                                <li @if(Request::is('our-package') || Request::is('dubai-package'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('our-news')}}">Our Tour Packages</a>
+                                    <ul class="sub-menu non_mega_menu">
+                                        <li @if(Request::is('dubai-package'))class="current-menu-item current-page-item"@endif><a href="{{route('dubai-package')}}">Dubai</a>
+                                        </li>
+                                    </ul>
                                 </li>
 
                                 <li @if(Request::is('contact'))class="hasSubMenu current-menu-ancestor current_page_ancestor"@endif><a href="{{route('contact')}}">Contact</a></li>
@@ -495,7 +499,7 @@
         </div>
 
 
-        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 40px !important; padding-bottom: 40px !important;">
+        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 30px !important; padding-bottom: 15px !important;">
             <div class="container  dark">
                 <div class="section_clear">
                     <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
@@ -507,7 +511,7 @@
             </div>
         </div>
 
-        {{--news--}}
+        {{--Welcome to Myanmar--}}
         <div id="fws_5481cb0e0ff64" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el standard_section    " style="padding-top: 0px !important; padding-bottom: 0px !important; ">
             <div class="container  dark">
                 <div class="section_clear">
@@ -546,7 +550,7 @@
                             <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                     <p>Myanmar, formerly known as Burma, is one of the least known countries in Asia. If you are planning to travel in Asia, Myanmar is the most authentic place to visit. It is rich in history, culture and tradition.... </p>
-                                    <div style="font-weight: 600"><a href="{{route('our-companies')}}">Read More
+                                    <div style="font-weight: 600"><a href="{{route('company-detail','25')}}">Read More
                                             <img class="readm_img" src="{{asset('img/arrow-right.png')}}"></a>
                                     </div>
                                 </div>
@@ -559,8 +563,8 @@
                                             <?php $i=1; $count=count($response['news']); ?>
                                                 @if(count($response['news'])>0)
                                                     @foreach($response['news'] as $row)
-                                                        @if($i==1 || $i%9==1)
-                                                            <div class="col-lg-12" style="float: left;margin-right: 76px;">
+                                                        @if($i==1 || $i%7==1)
+                                                            <div class="col-lg-12" style="float: left;margin-right: 8px;">
                                                                 @endif
                                                                 <dl class="dl-horizontal list">
 
@@ -574,12 +578,109 @@
                                                                         <p></p>
                                                                     </dd>
                                                                 </dl>
-                                                                @if($i==$count || $i%9==0)
+                                                                @if($i==$count || $i%7==0)
                                                             </div>
                                                         @endif
                                                         <?php $i++; ?>
                                                     @endforeach
                                                 @endif
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 30px !important; padding-bottom: 15px !important;">
+            <div class="container  dark">
+                <div class="section_clear">
+                    <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
+                        <div class="wpb_wrapper">
+                            <div class="divider__ solid_border"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{--Welcome to Dubai--}}
+        <div id="fws_5481cb0e0ff64" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el standard_section    " style="padding-top: 0px !important; padding-bottom: 0px !important; ">
+            <div class="container  dark">
+                <div class="section_clear">
+                    <div class="vc_col-sm-6 wpb_column column_container" style="" data-animation="" data-delay="0">
+                        <div class="wpb_wrapper">
+                            <div class="dynamic_slideshow wpb_content_element">
+                                <div class="with_thumbnails_container">
+                                    <div class="slideshow_container flexslider with_thumbnails slide_layout_fixed" id="contentflex">
+                                        <ul class="slides slide_image_thumbnails">
+                                            @foreach($response['global'] as $row)
+                                                <li class=' slide_element slide1 frame1'>
+                                                    <img src='news/{{$row->homeimage}}' title='{{$row->name}}' alt='' />
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                    <div class="slideshow_container flexslider with_thumbnails_carousel slide_layout_fixed" id="carouselflex">
+                                        <ul class="slides slide_image_thumbnails">
+                                            @foreach($response['global'] as $row)
+                                                <li class=' slide_element slide1 frame1'>
+                                                    <img src='news/{{$row->homeimage}}' title='{{$row->name}}' alt='' />
+                                                </li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vc_col-sm-6 wpb_column column_container" style="" data-animation="" data-delay="0">
+                        <div class="wpb_wrapper">
+                            <div class="header " style="">
+                                <h2>Welcome to Dubai ( U.A.E )</h2>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <p>i4Bookings is the solution for all your bookings while you're visiting the middle east, here we provide you with the necessary services and information at your finger click.... </p>
+                                    <div style="font-weight: 600"><a href="{{route('company-detail', $companies->id)}}">Read More
+                                            <img class="readm_img" src="{{asset('img/arrow-right.png')}}"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="fws_5481cb0e18791" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el standard_section    " style="padding-top: 0px !important; padding-bottom: 0px !important; ">
+                                <div class="container  dark">
+                                    <div class="section_clear">
+
+                                        <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
+                                            <?php $i=1; $count=count($response['global']); ?>
+                                            @if(count($response['global'])>0)
+                                                @foreach($response['global'] as $row)
+                                                    @if($i==1 || $i%7==1)
+                                                        <div class="col-lg-12" style="float: left;margin-right: 8px;">
+                                                            @endif
+                                                            <dl class="dl-horizontal list">
+
+                                                                <dt><div class="overlay"></div>
+                                                                <div class="circle">
+                                                                    <i class="moon-checkmark"></i>
+                                                                </div>
+                                                                </dt>
+                                                                <dd>
+                                                                    <h4>{{$row->name}}</h4>
+                                                                    <p></p>
+                                                                </dd>
+                                                            </dl>
+                                                            @if($i==$count || $i%7==0)
+                                                        </div>
+                                                    @endif
+                                                    <?php $i++; ?>
+                                                @endforeach
+                                            @endif
                                         </div>
 
                                     </div>

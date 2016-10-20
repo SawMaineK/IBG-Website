@@ -66,6 +66,7 @@ Route::group(['prefix' => 'administration', 'middleware' => ['auth']], function 
 //news
 	Route::get('/news-detail/{id}', ['as' => 'news-detail', 'uses' => 'OurNewsController@newsDetail']);
 	Route::get('/our-package', ['as' => 'our-news', 'uses' => 'OurNewsController@OurNews']);
+	Route::get('/dubai-package', ['as' => 'dubai-package', 'uses' => 'DubaiPackageController@dubaiPackage']);
 //product
 	Route::get('/products-detail/{id}', ['as' => 'products-detail', 'uses' => 'OurProductsController@productsDetail']);
 	Route::get('/our-products', ['as' => 'our-products', 'uses' => 'OurProductsController@OurProducts']);

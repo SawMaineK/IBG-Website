@@ -9,6 +9,17 @@
 
 </div>
 
+<!-- Name Mm Field -->
+<div class="row">
+    <div class="form-group">
+        {!! Form::label('name_mm', Lang::get('news/show_fields.name_mm'), ['class' => 'col-sm-4 col-lg-2 control-label']) !!}
+        <div class="col-sm-6 col-lg-6">
+            <p>{!! $news->name_mm !!}</p>
+        </div>
+    </div>
+
+</div>
+
 <!-- Homeimage Field -->
 <div class="row">
     <div class="form-group">
@@ -37,6 +48,17 @@
         {!! Form::label('body', Lang::get('news/show_fields.body'), ['class' => 'col-sm-4 col-lg-2 control-label']) !!}
         <div class="col-sm-6 col-lg-6">
             <p>{!! $news->body !!}</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- Location Field -->
+<div class="row">
+    <div class="form-group">
+        {!! Form::label('location', Lang::get('news/show_fields.location'), ['class' => 'col-sm-4 col-lg-2 control-label']) !!}
+        <div class="col-sm-6 col-lg-6">
+            <p>{!! $news->location !!}</p>
         </div>
     </div>
 

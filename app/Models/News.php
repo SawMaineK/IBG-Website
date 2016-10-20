@@ -14,9 +14,11 @@ class News extends Model
 
 	public $fillable = [
 	    "name",
+		"name_mm",
 		"homeimage",
 		"image",
-		"body"
+		"body",
+		"location"
 	];
 
     /**
@@ -26,16 +28,20 @@ class News extends Model
      */
     protected $casts = [
         "name" => "string",
+		"name_mm" => "string",
 		"homeimage" => "string",
 		"image" => "string",
-		"body" => "string"
+		"body" => "string",
+		"location" => "string"
     ];
 
 	public static $rules = [
 	    "name" => "required",
+		"name_mm" => "required",
 		"homeimage" => "required",
 		"image" => "required",
-		"body" => "required"
+		"body" => "required",
+		"location" => "required"
 	];
 
 	public function newsimages(){

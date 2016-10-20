@@ -14,9 +14,11 @@ return [
     */
 
 'name'=>'Name',
+'name_mm'=>'Name Mm',
 'homeimage'=>'Homeimage',
 'image'=>'Image',
 'body'=>'Body',
+'location'=>'Location',
 'save'=>'Save',
 'cancel'=>'Cancel',
 
