@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Session;
-
+use App;
 
 class DubaiPackageController extends Controller
 {
