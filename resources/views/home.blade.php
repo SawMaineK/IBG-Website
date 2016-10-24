@@ -741,7 +741,6 @@
                                                                     <a href="{{route('products-detail', $product->id)}}" class="btn-system second a2" data-animate="fadeInUp">Read More</a>
                                                                 </div>
                                                                 <a href="{{route('products-detail', $product->id)}}" class="title a3 lightbox-gallery lightbox" data-animate="fadeInUp">{{$product->name}}</a>
-                                                                <a href="#" class="categories a4" data-animate="fadeInUp">{{$product->price}} Ks</a>
                                                             </div>
                                                         </div>
 
@@ -749,7 +748,6 @@
                                                 </div>
                                                 <div class="info">
                                                     <h3><a href="{{route('products-detail', $product->id)}}">{{$product->name}}</a></h3>
-                                                    <span class="categories">{{$product->price}} Ks</span>
                                                 </div>
                                             </div>
                                         @endforeach

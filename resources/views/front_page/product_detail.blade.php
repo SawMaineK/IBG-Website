@@ -100,21 +100,7 @@
                                         <div class="summary entry-summary">
 
                                             <h1 itemprop="name" class="product_title entry-title">{{$response['productsimage']->name}}</h1>
-                                            <div class="price_rating">
 
-                                                <div class="price_square">
-                                                    <div itemprop="offers" itemscope itemtype="">
-
-                                                        <div class="price"><span class="amount">{{$response['productsimage']->price}} Ks</span>
-                                                        </div>
-
-                                                        <meta itemprop="price" content="35" />
-                                                        <meta itemprop="priceCurrency" content="GBP" />
-                                                        <link itemprop="availability" href="http://schema.org/InStock" />
-
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div itemprop="description" class="desc_shop">
                                                 <p>{{$response['productsimage']->body}}</p>
                                             </div>

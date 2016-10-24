@@ -115,7 +115,6 @@
                                                         <a href="{{route('products-detail', $row->id)}}" class="btn-system second a2" data-animate="fadeInUp">Read More</a>
                                                     </div>
                                                     <a href="{{route('products-detail', $row->id)}}" class="title a3 lightbox-gallery lightbox" data-animate="fadeInUp">{{$row->name}}</a>
-                                                    <a href="#" class="categories a4" data-animate="fadeInUp">{{$row->price}} Ks </a>
                                                 </div>
                                             </div>
 
@@ -123,7 +122,6 @@
                                     </div>
                                     <div class="info">
                                         <h3><a href="{{route('products-detail', $row->id)}}">{{$row->name}}</a></h3>
-                                        <span class="categories">{{$row->price}} Ks </span>
                                     </div>
                                 </div>
 
