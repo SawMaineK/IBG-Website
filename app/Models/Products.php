@@ -37,7 +37,7 @@ class Products extends Model
 
 	public static $rules = [
 	    "name" => "required",
-		"price" => "required",
+//		"price" => "required",
 		"gender" => "required",
 		"body" => "required",
 		"homeimage" => "required",
