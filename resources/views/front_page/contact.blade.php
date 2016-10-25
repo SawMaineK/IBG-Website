@@ -135,11 +135,11 @@
                                         </p>
                                         <div class="social">
                                             <ul>
-                                                <li><a href="#"><i class="icon-linkedin"></i></a>
+                                                <li><a href="https://www.linkedin.com/in/myomyo" target="_blank"><i class="icon-linkedin"></i></a>
                                                 </li>
-                                                <li><a href="#"><i class="icon-twitter"></i></a>
+                                                <li><a href="https://twitter.com/sophiemyo" target="_blank"><i class="icon-twitter"></i></a>
                                                 </li>
-                                                <li><a href="#"><i class="icon-facebook"></i></a>
+                                                <li><a href="https://www.facebook.com/sophiemyo" target="_blank"><i class="icon-facebook"></i></a>
                                                 </li>
                                             </ul>
                                         </div>

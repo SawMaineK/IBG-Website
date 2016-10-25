@@ -29,7 +29,7 @@ class DubaiPackageController extends Controller
         $companies = Company::all();
         $response['our_company'] = $companies;
 
-        $paginatenews = News::with('newsimages')->wherelocation(' Global')->orderby('id','desc')->paginate(7);
+        $paginatenews = News::with('newsimages')->wherelocation(' Global')->orderby('id','desc')->paginate(8);
         $response['global'] = $paginatenews;
 
         return view('front_page.dubai-package', compact('response'));

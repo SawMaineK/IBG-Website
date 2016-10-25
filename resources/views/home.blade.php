@@ -936,7 +936,7 @@
                             <div class="col-sm-12">
                                 <div class="col-sm-3">
                                     <ul>
-                                        <li class="facebook col-sm-1"><a href="#" title="Facebook">
+                                        <li class="facebook col-sm-1"><a href="https://www.facebook.com/sophiemyo" title="Facebook" target="_blank">
                                                 <i class="moon-facebook" style="font-size: 20px;"></i></a>
                                         </li>
                                         <li style="margin-right: 50px"></li>
@@ -952,7 +952,7 @@
                                 </div>
                                 <div class="col-sm-3">
                                     <ul>
-                                        <li class="twitter"><a href="#" title="twitter">
+                                        <li class="twitter"><a href="https://twitter.com/sophiemyo" title="twitter" target="_blank">
                                                 <i class="moon-twitter" style="font-size: 20px;"></i></a>
                                         </li>
                                     </ul>
