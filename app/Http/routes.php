@@ -79,3 +79,6 @@ Route::group(['prefix' => 'administration', 'middleware' => ['auth']], function 
 
 //NewsLetter
 	Route::post('/newsletter', ['as' => 'newsletter', 'uses' => 'NewsLetterController@newsletter']);
+
+//Welcome to Dubai Page (Read More)
+	Route::get('/welcome-to-dubai', ['as' => 'welcome-to-dubai', 'uses' => 'FrontController@WelcomeDubai']);

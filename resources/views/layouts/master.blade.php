@@ -375,7 +375,7 @@
                                     @foreach($response['partners'] as $partners)
                                         <div class="item">
                                             <a href="../{{$partners->link}}" class="tooltip_text" title="{{$partners->name}}">
-                                                <img src="../partners/x100/{{$partners->image}}" alt="{{$partners->name}}">
+                                                <img src="../partners/{{$partners->image}}" alt="{{$partners->name}}">
                                             </a>
                                         </div>
                                     @endforeach

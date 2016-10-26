@@ -30,6 +30,14 @@ class FrontController extends Controller
         return view('front_page/about-us', compact('response'));
     }
 
+    public function WelcomeDubai (){
+        $partners=Partner::all();
+        $response['partners']=$partners;
+        $companies = Company::all();
+        $response['our_company'] = $companies;
+        return view('front_page/welcome-to-dubai', compact('response'));
+    }
+
     public function OurCompany (){
         $partners=Partner::all();
         $response['partners']=$partners;

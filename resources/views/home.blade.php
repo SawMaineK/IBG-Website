@@ -647,7 +647,7 @@
                             <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                     <p>i4Bookings is the solution for all your bookings while you're visiting the middle east, here we provide you with the necessary services and information at your finger click.... </p>
-                                    <div style="font-weight: 600"><a href="{{route('company-detail', $companies->id)}}">Read More
+                                    <div style="font-weight: 600"><a href="{{route('welcome-to-dubai')}}">Read More
                                             <img class="readm_img" src="{{asset('img/arrow-right.png')}}"></a>
                                     </div>
                                 </div>
@@ -779,7 +779,7 @@
                                     @foreach($response['partners'] as $partners)
                                         <div class="item">
                                             <a href="{{$partners->link}}" class="tooltip_text" title="{{$partners->name}}">
-                                                <img src="../partners/x100/{{$partners->image}}" alt="{{$partners->name}}">
+                                                <img src="../partners/{{$partners->image}}" alt="{{$partners->name}}">
                                             </a>
                                         </div>
                                     @endforeach
