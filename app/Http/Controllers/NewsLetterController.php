@@ -34,7 +34,7 @@ class NewsLetterController extends Controller
             'newsletter_email'  => $request->email,
         );
 
-        $emails = 'sawmainek90@gmail.com';
+        $emails = $request->email;
 
         Mail::send('emails.newsletter', $data, function ($m) use ($emails) {
             $m->from(Config::get('mail.from.address'),Config::get('mail.from.name'));
@@ -42,6 +42,6 @@ class NewsLetterController extends Controller
             $m->subject('Intelligence Business Global Company Limited - Welcome to our Newsletter');
         });
 
-        return redirect()->back()->with('message',"Successfully Send Mail!");
+        return redirect('/');
     }
 }

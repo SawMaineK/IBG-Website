@@ -55,7 +55,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'intelligencebglobal@gmail.com', 'name' => 'Intelligence Business Global Company Limited'],
+    'from' => ['address' => 'i4bglobal@gmail.com', 'name' => 'Intelligence Business Global Company Limited'],
 
     /*
     |--------------------------------------------------------------------------

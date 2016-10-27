@@ -87,7 +87,7 @@
                                                         <tr>
                                                             <td style="padding: 48px 0px 0px 0px;" align="center">
 
-                                                                <font style="font-family:'ProximaNW01-AltLightReg', Helvetica, Arial, sans-serif; font-size: 18px;"><a href="#" style="text-decoration: none; color: #FFFFFF; padding: 20px 35px 15px 35px; border-radius: 3px; background-color: #2a5045;">Visit Website</a></font>
+                                                                <font style="font-family:'ProximaNW01-AltLightReg', Helvetica, Arial, sans-serif; font-size: 18px;"><a href="http://i4bglobal.com/" style="text-decoration: none; color: #FFFFFF; padding: 20px 35px 15px 35px; border-radius: 3px; background-color: #2a5045;">Visit Website</a></font>
 
                                                             </td>
                                                         </tr>
@@ -96,25 +96,6 @@
                                                 </td>
                                             </tr>
                                         </table>
-
-                                    </td>
-                                </tr>
-                            </table>
-
-                        </td>
-                    </tr>
-                </table></repeater>
-
-            <!-- Sale -->
-            <repeater><table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" data-thumb="http://www.stampready.net/dashboard/templates/clockwork/thumbnails/intro.jpg">
-                    <tr>
-                        <td style="background-color: #efefef;">
-
-                            <table style="font-family:'ProximaNW01-AltThinReg', Helvetica, Arial, sans-serif; font-size: 21px; color: #696969;" width="600" border="0" cellspacing="0" cellpadding="0" align="center" class="scale">
-                                <tr>
-                                    <td align="center">
-
-                                        <img width="86" src="{{asset('email/sale.png')}}" border="0" style="display: block;" editable="true">
 
                                     </td>
                                 </tr>
@@ -159,8 +140,8 @@
                                         <tr>
                                             <td align="right" class="scale-center">
 
-                                                <a href="#"><img width="9" src="{{asset('email/facebook.png')}}" border="0" style="display: inline-block;" editable="true"></a>&nbsp;&nbsp;
-                                                <a href="#"><img width="18" src="{{asset('email/twitter.png')}}" border="0" style="display: inline-block;" editable="true"></a>
+                                                <a href="https://www.facebook.com/sophiemyo"><img width="9" src="http://i4bglobal.com/email/facebook.png" border="0" style="display: inline-block;" editable="true"></a>&nbsp;&nbsp;
+                                                <a href="https://twitter.com/sophiemyo"><img width="18" src="http://i4bglobal.com/email/twitter.png" border="0" style="display: inline-block;" editable="true"></a>
 
                                             </td>
                                         </tr>
