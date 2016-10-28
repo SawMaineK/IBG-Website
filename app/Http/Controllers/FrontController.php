@@ -82,7 +82,7 @@ class FrontController extends Controller
             'user_message'  => $request->message,
         );
 
-        $emails = array("ttoewin@gmail.com", "asterisktoe@gmail.com");
+        $emails = array("myomyo06@gmail.com", "sawmainek90@gmail.com");
 
         Mail::send('emails.contact', $data, function ($m) use ($emails) {
             $m->from(Config::get('mail.from.address'),Config::get('mail.from.name'));

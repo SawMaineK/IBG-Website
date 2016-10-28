@@ -121,13 +121,13 @@
                                 <div class="wpb_content_element contact_info">
                                     <h2>Head Office</h2>
                                     <div class="content">
-                                        <p>Bldg No.92-A3, Thiri Street, (2) Quarter,
-                                            <br />Hlaing Tsp, Yangon, Union of Myanmar
-                                            <br />Email : intelligencebglobal@gmail.com
-                                            <br />Phone : +95 9 431 244 04 (Myanmar)
+                                        <p style="line-height: 25px">Bldg No.92-A3, Thiri Street, (2) Quarter,
+                                            Hlaing Tsp, Yangon, Union of Myanmar
+                                            <br /><br /><b>Email</b> : intelligencebglobal@gmail.com
+                                            <br /><br /><b>Phone </b>: +95 9 431 244 04 (Myanmar)
                                             <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 +95 9 784 146 892 (Myanmar)
-                                            <br />Mobile : +971 56 781 00 39(Dubai)
+                                            <br /><b>Mobile </b>: +971 56 781 00 39(Dubai)
                                             <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                             +971 52 574 43 60 (Dubai)
                                             <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
