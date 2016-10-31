@@ -143,3 +143,11 @@ Route::get('news/{id}/delete', [
     'as' => 'administration.news.delete',
     'uses' => 'NewsController@destroy',
 ]);
+
+
+Route::resource('iBGUsers', 'IBGUsersController');
+
+Route::get('iBGUsers/{id}/delete', [
+    'as' => 'administration.iBGUsers.delete',
+    'uses' => 'IBGUsersController@destroy',
+]);

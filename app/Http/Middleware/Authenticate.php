@@ -17,7 +17,10 @@ class Authenticate
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if (Auth::guard($guard)->guest()) {
+        //Auth::guard($guard)->guest()
+        $currentUser = Auth::guard($guard)->user();
+        if (Auth::guard($guard)->guest() ||
+            ($currentUser && $currentUser->isAdmin === 0)) {
             if ($request->ajax() || $request->wantsJson()) {
                 return response('Unauthorized.', 401);
             } else {

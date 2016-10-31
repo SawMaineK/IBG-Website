@@ -59,3 +59,10 @@
 		<p>@lang('productsImages/index.model_name')</p>
 	</a>
 </li>
+
+<li>
+	<a href="{{ asset('administration/iBGUsers') }}">
+		<div class="notifications label label-warning">{!! App\Models\IBGUsers::count() !!}</div>
+		<p>@lang('iBGUsers/index.model_name')</p>
+	</a>
+</li>

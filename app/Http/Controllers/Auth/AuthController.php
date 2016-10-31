@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use Illuminate\Http\Request;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
@@ -74,4 +75,20 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+    public function redirectPath()
+    {
+        return property_exists($this, 'redirectTo') ? $this->redirectTo : '/home';
+    }
+
+    protected function getCredentials(Request $request)
+    {
+        if($request->get('isAdmin', 0) == 1){
+            $this->redirectTo = "/administration";
+            return $request->only($this->loginUsername(), 'password', 'isAdmin');
+        }
+        $this->redirectTo = '/';
+        return $request->only($this->loginUsername(), 'password');
+    }
+
 }

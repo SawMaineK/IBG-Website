@@ -47,26 +47,17 @@
                                                 <div class="wpb_wrapper">
                                                     <br/><br/>
                                                     <p style="text-align: justify;">
-                                                    <h1 class="shortcode_h1" style="text-align: center">O U R &nbsp; C O M P A N Y</h1>
+                                                    <h1 class="shortcode_h1" style="text-align: center">O U R &nbsp; C O M P A N I E S</h1>
                                                     <div class="line_under">
                                                         <div class="line_left"></div>
                                                         <div class="line_center"></div>
                                                         <div class="line_right"></div>
                                                     </div>
-                                                    <br /><p>IBG General Trading was established and registered in 2012 in Yangon - Myanmar.</p>
-                                                    <p>Over the past four years, IBG has accumulated a strong and healthy market trust within the region.</p>
-                                                    <p>IBG has been providing support and services to all major Industries:</p>
-                                                    <p><i class="moon-circle-small"></i>&nbsp;&nbsp; Trading  & Distribution
-                                                    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; High quality of Korean Cosmetics, Fashion, Beautiful Bags, Shoes,
-                                                        Perfumes as well as from Thailand and Dubai - U.A.E.
-                                                    </p>
-                                                    </p>
-                                                    <p>We provide a company that offers a range of attractive opportunities to institutional investors. In addition our headquarters in Yangon - Myanmar, and other major offices in the Dubai - U.A.E , South East Asia, our professional team serves clients in over 9 countries.</p>
-                                                    <p>Our objective is to become one of the leading companies within the most competitive market.</p>
-                                                    <p>We also focus on what society really needs and pay special attention to the environment and communities.</p>
-                                                    <p>Our aim is also to gain International partners to collaborate on projects worldwide.</p>
-                                                    <p>We are a professionally managed company that believes in profitable, sustainable long-term relationship with employees, clients, suppliers and local communities.</p>
-                                                    <p>We speak your language and at your service at 24hrs x 7days.</p>
+                                                    <p><i class="moon-circle-small"></i>&nbsp;&nbsp; IBG General Trading</p>
+                                                    <p><i class="moon-circle-small"></i>&nbsp;&nbsp; IBG Business Consultant</p>
+                                                    <p><i class="moon-circle-small"></i>&nbsp;&nbsp; IBG  Marketing & Event Management</p>
+                                                    <p><i class="moon-circle-small"></i>&nbsp;&nbsp; IBG Real Estate</p>
+                                                    <p><i class="moon-circle-small"></i>&nbsp;&nbsp; i4bookings Travels & Tours</p>
                                                     <br/>
                                                 </div>
                                             </div>

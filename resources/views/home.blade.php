@@ -363,7 +363,8 @@
 
                                     <!-- LAYER NR. 1 -->
                                     <div class="tp-caption lfl" data-x="547" data-y="315" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300" style="z-index: 5; color: #ed1c24; font-weight: bold; font-size: 30px">
-                                        {{$slider->name}}
+                                       <span style="background: #cdcdcd; opacity: 0.9; border-radius: 4px; white-space: nowrap; width: auto;  padding: 5px; box-shadow: 0px 4px 10px -5px black;">
+                                           {{$slider->name}} </span>
                                     </div>
                                 </li>
                                 @endforeach

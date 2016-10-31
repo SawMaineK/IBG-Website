@@ -11,6 +11,8 @@ class User extends Authenticatable
      *
      * @var array
      */
+    public $table = "iBGUsers";
+
     protected $fillable = [
         'name', 'email', 'password',
     ];
