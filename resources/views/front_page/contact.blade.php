@@ -119,19 +119,22 @@
                         <div class="vc_col-sm-4 wpb_column column_container" style="" data-animation="" data-delay="0">
                             <div class="wpb_wrapper">
                                 <div class="wpb_content_element contact_info">
-                                    <h2>Head Office</h2>
+                                    <h2 style="margin-bottom: 18px; text-align: justify">Head Office - Myanmar ( Burma )</h2>
                                     <div class="content">
-                                        <p style="line-height: 25px">Bldg No.92-A3, Thiri Street, (2) Quarter,
-                                            Hlaing Tsp, Yangon, Union of Myanmar
+                                        <p style="line-height: 23px">Bldg No.92-A3, Thiri Street, (2) Quarter, Hlaing Tsp, Yangon, Union of Myanmar
                                             <br /><br /><b>Email</b> : intelligencebglobal@gmail.com
-                                            <br /><br /><b>Phone </b>: +95 9 431 244 04 (Myanmar)
+                                            <br /><br /><b>Phone </b>: +95 9 431 244 04
                                             <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                +95 9 784 146 892 (Myanmar)
-                                            <br /><b>Mobile </b>: +971 56 781 00 39(Dubai)
+                                                +95 9 784 146 892
+                                        </p><br/>
+                                        <h2 style="margin-bottom: 18px">Head Office -  U.A.E</h2>
+                                        <p style="line-height: 23px; text-align: justify">Bayswater Tower, Office#P401
+                                            Burj Khalifa District- Business Bay Area
+                                            P.O.BOX. 117636 Dubai, U.A.E
+                                            <br /><br /><b>Phone </b>: +971 4 451 11 48
                                             <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            +971 52 574 43 60 (Dubai)
-                                            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            +971 54 494 18 88(Dubai)
+                                            +971 4 554 25 50
+                                            <br /><br /><b>Mobile </b>: +971 56 781 00 39
                                         </p>
                                         <div class="social">
                                             <ul>
