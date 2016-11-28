@@ -126,15 +126,6 @@
                                             <br /><br /><b>Phone </b>: +95 9 431 244 04
                                             <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                 +95 9 784 146 892
-                                        </p><br/>
-                                        <h2 style="margin-bottom: 18px">Head Office -  U.A.E</h2>
-                                        <p style="line-height: 23px; text-align: justify">Bayswater Tower, Office#P401
-                                            Burj Khalifa District- Business Bay Area
-                                            P.O.BOX. 117636 Dubai, U.A.E
-                                            <br /><br /><b>Phone </b>: +971 4 451 11 48
-                                            <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            +971 4 554 25 50
-                                            <br /><br /><b>Mobile </b>: +971 56 781 00 39
                                         </p>
                                         <div class="social">
                                             <ul>

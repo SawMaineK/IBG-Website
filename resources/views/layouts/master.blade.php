@@ -448,55 +448,9 @@
                             <div class="textwidget" style="margin-left:46px"> +95 9 784 146 892</div>
                         </div>
 
-                        <div id="widget_flickr-2" class="widget widget_flickr">
-                            <h4 class="widget-title">F o l l o w &nbsp; U s</h4>
-                            <div class="thin_line"></div>
-                            <div class="col-sm-12">
-                                <div class="col-sm-3">
-                                    <ul>
-                                        <li class="facebook col-sm-1"><a href="https://www.facebook.com/sophiemyo" title="Facebook" target="_blank">
-                                                <i class="moon-facebook" style="font-size: 20px;"></i></a>
-                                        </li>
-                                        <li style="margin-right: 50px"></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-3">
-                                    <ul>
-                                        <li class="google_plus"><a href="#" title="Google Plus">
-                                                <i class="moon-google_plus" style="font-size: 20px;"></i></a>
-                                        </li>
-                                        <li style="margin-right: 50px"></li>
-                                    </ul>
-                                </div>
-                                <div class="col-sm-3">
-                                    <ul>
-                                        <li class="twitter"><a href="https://twitter.com/sophiemyo" title="twitter" target="_blank">
-                                                <i class="moon-twitter" style="font-size: 20px;"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
 
 
-
-
-                    <div class="span3">
-
-                        <div id="text-5" class="widget widget_text">
-                            <h4 class="widget-title">L o c a t i o n &nbsp; ~ &nbsp; ( U . A . E )</h4>
-                            <div class="thin_line"></div>
-                            <div class="textwidget">Bayswater Tower, Office#P401 Burj Khalifa District-Business Bay Area
-                                P.O.BOX. 117636 Dubai, U.A.E</div>
-                            <div class="textwidget" style="margin-top: 15px">Email: intelligencebglobal@gmail.com</div>
-                            <div class="textwidget" style="margin-top: 15px">Phone: +971 4 451 11 48</div>
-                            <div class="textwidget" style="margin-left:46px"> +971 4 554 25 50</div>
-                            <div class="textwidget">Mobile: +971 56 781 00 39</div>
-                        </div>
-
-                    </div>
 
 
                     <div class="span3">
@@ -517,7 +471,6 @@
 
 
                     <div class="span3">
-
                         <div id="tag_cloud-2" class="widget widget_tag_cloud">
                             <h4 class="widget-title">S i g n &nbsp; U p &nbsp; f o r &nbsp; N e w s l e t t e r</h4>
                             <div class="thin_line"></div>
@@ -563,8 +516,37 @@
                     </div>
 
 
-
-
+                    <div class="span3">
+                        <div id="widget_flickr-2" class="widget widget_flickr">
+                            <h4 class="widget-title">F o l l o w &nbsp; U s</h4>
+                            <div class="thin_line"></div>
+                            <div class="col-sm-12">
+                                <div class="col-sm-3">
+                                    <ul>
+                                        <li class="facebook col-sm-1"><a href="https://www.facebook.com/sophiemyo" title="Facebook" target="_blank">
+                                                <i class="moon-facebook" style="font-size: 20px;"></i></a>
+                                        </li>
+                                        <li style="margin-right: 50px"></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul>
+                                        <li class="google_plus"><a href="#" title="Google Plus">
+                                                <i class="moon-google_plus" style="font-size: 20px;"></i></a>
+                                        </li>
+                                        <li style="margin-right: 50px"></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul>
+                                        <li class="twitter"><a href="https://twitter.com/sophiemyo" title="twitter" target="_blank">
+                                                <i class="moon-twitter" style="font-size: 20px;"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
