@@ -462,6 +462,7 @@
                                     <div class="line_right"></div>
                                 </div>
                             </div>
+                            <br/><br/>
                             <div class="home_portfolio with_space">
                                 <div class="">
                                     <section id="portfolio-preview-items" class="three-cols animate_onoffset" data-nr="3">
@@ -500,7 +501,7 @@
         </div>
 
 
-        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 30px !important; padding-bottom: 15px !important;">
+        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 30px !important; padding-bottom: 45px !important;">
             <div class="container  dark">
                 <div class="section_clear">
                     <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
@@ -598,7 +599,7 @@
         </div>
 
 
-        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 30px !important; padding-bottom: 15px !important;">
+        <div id="fws_5476fa058f2aa" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style   " style="padding-top: 30px !important; padding-bottom: 45px !important;">
             <div class="container  dark">
                 <div class="section_clear">
                     <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
