@@ -1415,7 +1415,7 @@ nav .menu li:first-child {
 /* Footer */
 
 .footer_social_bar {
-    height: 70px;
+    height: 0px;  /*70px;*/
     float: left;
     width: 100%;
 }
@@ -6434,7 +6434,7 @@ aside .tagcloud a:hover {
     position: absolute;
     width: 100%;
     left: 0;
-    margin-top: 98px;
+    margin-top: 93px; /*98px*/
     border: none;
 }
 .recent_portfolio .pagination {

@@ -454,6 +454,22 @@
 
 
                     <div class="span3">
+
+                        <div id="text-5" class="widget widget_text">
+                            <h4 class="widget-title">L o c a t i o n &nbsp; ~ &nbsp; ( U . A . E )</h4>
+                            <div class="thin_line"></div>
+                            <div class="textwidget">Flat # 202, 38th Street, Omar Bin Al Khatab Road, Opposite Al Ghurair Center
+                                Dubai, U.A.E</div>
+                            <div class="textwidget" style="margin-top: 15px">Email: intelligencebglobal@gmail.com</div>
+                            <div class="textwidget" style="margin-top: 15px">Phone: +971 4 399 48 45</div>
+                            <div class="textwidget">Mobile: +971 56 781 00 39</div>
+                            <div class="textwidget" style="margin-left: 49px"> +971 52 574 43 60</div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="span3">
                         <div id="recent-posts-4" class="widget widget_recent_entries">
                             <h4 class="widget-title">O u r &nbsp; C o m p a n i e s</h4>
                             <div class="thin_line"></div>
@@ -471,6 +487,7 @@
 
 
                     <div class="span3">
+
                         <div id="tag_cloud-2" class="widget widget_tag_cloud">
                             <h4 class="widget-title">S i g n &nbsp; U p &nbsp; f o r &nbsp; N e w s l e t t e r</h4>
                             <div class="thin_line"></div>
@@ -513,10 +530,7 @@
                                 <!-- /mc_signup_container -->
                             </div>
                         </div>
-                    </div>
 
-
-                    <div class="span3">
                         <div id="widget_flickr-2" class="widget widget_flickr">
                             <h4 class="widget-title">F o l l o w &nbsp; U s</h4>
                             <div class="thin_line"></div>
@@ -546,7 +560,10 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
+
+
 
                 </div>
             </div>

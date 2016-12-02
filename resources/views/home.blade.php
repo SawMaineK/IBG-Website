@@ -796,6 +796,112 @@
             </div>
         </div>
 
+        <div id="fws_548854ca800b8" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style    " style="background-image: url(images/2014/09/testimonial_bg.gif); background-position: left top; background-repeat: no-repeat; padding-top: 60px !important; padding-bottom: 60px !important; ">
+            <div class="container  light">
+                <div class="section_clear">
+                    <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">
+                        <div class="wpb_wrapper">
+                            <div class="wpb_content_element dynamic_page_header style_1">
+                                <h1 style="font-size:36px; font-family:Bebas Neue; color:#ffffff">LET'S GO TO &amp; DUBAI...</h1>
+                                <div class="line_under">
+                                    <div class="line_left"></div>
+                                    <div class="line_center"></div>
+                                    <div class="line_right"></div>
+                                </div>
+                                <h1 style="font-size:30px; font-family:Bebas Neue; color:#ffffff">Enjoy shopping  Festival  from 26 Dec 2016 to 28 Jan 2017</h1>
+                            </div>
+                            <br/>
+                            <div id="fws_548854ca80867" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el standard_section    " style="padding-top: 0px !important; padding-bottom: 0px !important; ">
+                                <div class="container  dark">
+                                    <div class="section_clear">
+                                        <h1 style="font-size:30px; font-family:Bebas Neue; color:#ffffff; margin-left: 13px;">Inclusive Facilities</h1>
+                                        <div class="vc_col-sm-6 wpb_column column_container" style="" data-animation="" data-delay="0">
+                                            <div class="wpb_wrapper">
+                                                <div class="wpb_content_element full_testimonials">
+                                                    <div class="row">
+                                                        <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 535px; height: 189px; margin: 0px 0px 20px; overflow: hidden;">
+                                                            <div class="carousel carousel_single_testimonial" style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 5000px; height: 250px; z-index: auto; opacity: 1;">
+                                                                <div class="single_testimonial" style="width: 535px;">
+                                                                    <div class="content">
+                                                                        <p style="text-align: justify;"><span class="img_testimonial"></span>
+                                                                            15 days Tourist Visa
+                                                                            3/ 4 Stars Hotels
+                                                                            Shopping Malls Tour
+                                                                            Abu Dhabi Tour
+                                                                            Water Park ( Atlantis / Wild Wadi / RKM Ice Land) Tour
+                                                                            Burjkhalifa (The Top) + Dubai Mall & Water fountain Tour
+                                                                            Desert Safari Tour
+                                                                            Beach Tour (Burj Arab Hotel) + Gold Souq (The biggest Gold market) Airport-Pick up & Sent off.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="single_testimonial" style="width: 535px;">
+                                                                    <div class="content">
+                                                                        <p style="text-align: justify;"><span class="img_testimonial"></span>
+                                                                            Day 1-- Pick up from Airport to Hotel - Shopping Mall Tour
+                                                                            Day 2-- Abu Dhabi Tour
+                                                                            Day 3-- Enjoying Water Park ( Atlantis / Wild Wadi / RKM Ice Land)
+                                                                            Day 4-- Burjkhalifa (The Top- The Tallest Tower over the world), Dubai Mall shopping (The biggest Mall over the World) & Water Fountain
+                                                                            Day 5-- Desert Safari Tour, Happy taking pictures (Beach Tour) + Gold Souq Tour
+                                                                            Day 6-- Sent off Airport
+                                                                            USD-1050.00/Person.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="controls">
+                                                        <a href="#" class="prev" style="display: block;"></a>
+                                                        <a href="#" class="next" style="display: block;"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="vc_col-sm-6 wpb_column column_container" style="" data-animation="" data-delay="0">
+                                            <div class="wpb_wrapper">
+                                                <span style="margin-left: 30px; color: #ffffff; font-size: 22px"><b>6 days Package Tour</b></span>
+                                                <p></p><p></p><p></p>
+                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark-circle"></i></div></dt>
+                                                    <dd>
+                                                        <h4>Singapore -- Dubai -- Singapore</h4>
+                                                        <p></p>
+                                                    </dd>
+                                                </dl>
+                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark-circle"></i></div></dt>
+                                                    <dd>
+                                                        <h4>Korea -- Dubai -- Korea</h4>
+                                                        <p></p>
+                                                    </dd>
+                                                </dl>
+                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark-circle"></i></div></dt>
+                                                    <dd>
+                                                        <h4>Japan -- Dubai -- Japan </h4>
+                                                        <p></p>
+                                                    </dd>
+                                                </dl>
+                                                <dl class="dl-horizontal list"><dt><div class="overlay"></div><div class="circle"><i class="moon-checkmark-circle"></i></div></dt>
+                                                    <dd>
+                                                        <h4>Yangon -- Dubai -- Yangon</h4>
+                                                        <p></p>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p style="text-align: center; color: #cffcff; font-size: 16px;"><b>Remark <i class="steadysets-icon-stopwatch"></i> Air ticket will be charged separately upon Airline rate & travel date (No more extra cost)</b> </p>
+                            <p style="text-align: center; color: #cffcff; font-size: 15px;"><b><i class="steadysets-icon-star"></i>&nbsp;<i class="steadysets-icon-star"></i>&nbsp;<i class="steadysets-icon-star"></i>
+                                    &nbsp; The rate will be between <span style="font-size: 18px"> 700-USD </span> ~ <span style="font-size: 18px"> 800-USD </span> &nbsp; <i class="steadysets-icon-star"></i>&nbsp;<i class="steadysets-icon-star"></i>&nbsp;<i class="steadysets-icon-star"></i> </b> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <a href="#" class="scrollup">Scroll</a>
         <!-- Social Profiles -->
 
@@ -855,6 +961,22 @@
                             <div class="textwidget" style="margin-left:46px"> +95 9 784 146 892</div>
                         </div>
 
+                    </div>
+
+
+
+
+                    <div class="span3">
+                        <div id="text-5" class="widget widget_text">
+                            <h4 class="widget-title">L o c a t i o n &nbsp; ~ &nbsp; ( U . A . E )</h4>
+                            <div class="thin_line"></div>
+                            <div class="textwidget">Flat # 202, 38th Street, Omar Bin Al Khatab Road, Opposite Al Ghurair Center
+                                Dubai, U.A.E</div>
+                            <div class="textwidget" style="margin-top: 15px">Email: intelligencebglobal@gmail.com</div>
+                            <div class="textwidget" style="margin-top: 15px">Phone: +971 4 399 48 45</div>
+                            <div class="textwidget">Mobile: +971 56 781 00 39</div>
+                            <div class="textwidget" style="margin-left: 49px"> +971 52 574 43 60</div>
+                        </div>
 
                     </div>
 
@@ -862,6 +984,7 @@
 
 
                     <div class="span3">
+
                         <div id="recent-posts-4" class="widget widget_recent_entries">
                             <h4 class="widget-title">O u r &nbsp; C o m p a n i e s</h4>
                             <div class="thin_line"></div>
@@ -873,8 +996,8 @@
                                 @endforeach
                             </ul>
                         </div>
-                    </div>
 
+                    </div>
 
 
 
@@ -923,12 +1046,6 @@
                             </div>
                         </div>
 
-                    </div>
-
-
-
-                    <div class="span3">
-
                         <div id="widget_flickr-2" class="widget widget_flickr">
                             <h4 class="widget-title">F o l l o w &nbsp; U s</h4>
                             <div class="thin_line"></div>
@@ -960,6 +1077,8 @@
                         </div>
 
                     </div>
+
+
 
 
 
