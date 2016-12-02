@@ -364,7 +364,7 @@
 
     {{--Partner Data Retrieve--}}
 
-    <div id="fws_5481c35f5e7af" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style" style="padding-top: 40px !important; padding-bottom: 0px !important; ">
+    <div id="fws_5481c35f5e7af" class="wpb_row animate_onoffset  vc_row-fluid  animate_onoffset row-dynamic-el section-style" style="padding-top: 40px !important; padding-bottom: 20px !important; ">
         <div class="container  dark">
             <div class="section_clear">
                 <div class="vc_col-sm-12 wpb_column column_container" style="" data-animation="" data-delay="0">

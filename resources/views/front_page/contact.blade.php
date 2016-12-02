@@ -53,6 +53,7 @@
                                         <div class="line_right"></div>
                                     </div>
                                     <p class="description">We want to hear from you. Whether you have an enquiry, feedback or simply want to talk, there are a number of ways you can reach us.</p>
+                                    <br/>
                                 </div>
                                 @if ($message = Session::get('message'))
                                     <div class="alert alert-success alert-dismissable margin5">
